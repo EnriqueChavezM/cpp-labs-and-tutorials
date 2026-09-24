@@ -1,1 +1,50 @@
+# ==========================================
+# C++ Binarios y Archivos de Compilación
+# ==========================================
+# Archivos ejecutables generados al compilar
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Librerías estáticas y dinámicas compiladas
+*.lib
+*.a
+*.dll
+*.dylib
+*.so
+
+# ==========================================
+# Entornos de Desarrollo y Editores (IDE)
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Visual Studio / MSVC
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# ==========================================
+# Sistemas Operativos
+# ==========================================
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+
 Estructura_Repo.txt
