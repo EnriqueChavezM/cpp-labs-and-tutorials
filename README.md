@@ -35,7 +35,7 @@ Bienvenido/a a mi repositorio personal dedicado al aprendizaje, práctica y docu
 ## 📚 Recursos
 
 - 🧩 **[Coddy - C++ Fundamentals](https://coddy.tech/journeys/cpp/fundamentals)** — *Plataforma interactiva de resolución de retos y fundamentos.*
-
+- 📽️ **[Curso de programación en C++](https://www.youtube.com/playlist?list=PLLwIDTEDfqbYh8S4JNHYkXaGx5zyAtq5z)** - *Canal arm :: teach*
 - 📖 **[C++ Reference (Documentación Oficial)](https://en.cppreference.com/?utm_source=gemini)**
 
 ---
