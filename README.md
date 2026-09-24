@@ -25,6 +25,10 @@ Bienvenido/a a mi repositorio personal dedicado al aprendizaje, práctica y docu
 .
 ├── 01_fundamentos/          # Sintaxis básica, tipos de datos, estructuras de control
 │   
+├── 02_Retos-y_ejercicios/
+│   └── 01_Coddy/
+│       └── 01_Fundamentos/
+│   
 └── docs/                    # Apuntes teóricos, hojas de atajos y recursos
     └── 01_Imágenes
 
