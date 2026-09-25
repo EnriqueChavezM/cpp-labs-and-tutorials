@@ -17,6 +17,12 @@ Bienvenido/a a mi repositorio personal dedicado al aprendizaje, práctica y docu
 
 ---
 
+## 📓 Introducción
+
+C++ es un lenguaje de programación potente y de alto rendimiento, utilizado en todo tipo de ámbitos, desde el desarrollo de videojuegos y los sistemas operativos hasta la computación científica, conocido por su eficiencia y flexibilidad.
+
+---
+
 ## 🗂️ Estructura del Repositorio
 
 ***[Ver Tabla de Contenido](/Tabla_Contenido.md)***
@@ -24,23 +30,33 @@ Bienvenido/a a mi repositorio personal dedicado al aprendizaje, práctica y docu
 ```text
 .
 ├── 01_fundamentos/          # Sintaxis básica, tipos de datos, estructuras de control
+│   ├── 01_Sintaxis/
 │   
 ├── 02_Retos-y_ejercicios/
 │   └── 01_Coddy/
 │       └── 01_Fundamentos/
 │   
 └── docs/                    # Apuntes teóricos, hojas de atajos y recursos
-    └── 01_Imágenes
+    ├── 01_Imágenes/
+    └── 02_Bibliografía
 
 ```
 
 ---
 
-## 📚 Recursos
+## 📚 Cursos, Tutoriales y Referencias
 
 - 🧩 **[Coddy - C++ Fundamentals](https://coddy.tech/journeys/cpp/fundamentals)** — *Plataforma interactiva de resolución de retos y fundamentos.*
+- 🌐 **[Tutorial de C++ Sintaxis Básica - Luis Llamas](https://www.luisllamas.es/curso-cpp/)** — *Guía teórica y práctica en español sobre los fundamentos de C++.*
 - 📽️ **[Curso de programación en C++](https://www.youtube.com/playlist?list=PLLwIDTEDfqbYh8S4JNHYkXaGx5zyAtq5z)** - *Canal arm :: teach*
+- 📽️ **[Programación en C++](https://www.youtube.com/playlist?list=PLWtYZ2ejMVJlUu1rEHLC0i_oibctkl0Vh)** - *Programación ATS*
 - 📖 **[C++ Reference (Documentación Oficial)](https://en.cppreference.com/?utm_source=gemini)**
+
+---
+
+## 📒 Bibliografía
+
+- 📖 **[Curso de programación en C++, Apuntes de clase.](/docs/02_Bibliografía/curso_programacion_C++_Apuntes_Clase.pdf) - *Sergio Talens Oliag*
 
 ---
 
