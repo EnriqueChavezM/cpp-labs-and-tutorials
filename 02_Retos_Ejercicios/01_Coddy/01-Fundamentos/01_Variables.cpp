@@ -29,7 +29,7 @@ int main() {
  *      Declara una variable int llamada 'bonus' e inicialízala a 25
  * 
 **************************************************************************************************/
-/*
+
 #include <iostream>
 
 int main() {
@@ -43,4 +43,3 @@ int main() {
     
     return 0;
 }
-    */
