@@ -78,10 +78,10 @@ varias líneas */
 
 Todo programa en **C++** necesita obligatoriamente estos elementos:
 
-1. **Directivas de preprocesador (`#include`): Sirven para importar librerías. La más común al inicio es `<iostream>`, que permite manejar la entrada y salida de datos (como imprimir en pantalla).
+1. **Directivas de preprocesador (`#include`):** Sirven para importar librerías. La más común al inicio es `<iostream>`, que permite manejar la entrada y salida de datos (como imprimir en pantalla).
 2. **Función principal (``main``):** Es el punto de entrada y salida de cualquier aplicación en **C++**. El sistema operativo busca esta función para comenzar a ejecutar el código.
 3. **Espacio de nombres (``std``):** Se usa para evitar conflictos de nombres en las funciones estándar (como ``cout``). Se antepone ``std::`` o se declara ``using namespace std;``.
-4. Retorno (``return 0;``): Indica al sistema operativo que el programa terminó de ejecutarse correctamente sin errores.
+4. **Retorno (``return 0;``):** Indica al sistema operativo que el programa terminó de ejecutarse correctamente sin errores.
 
 ---
 
