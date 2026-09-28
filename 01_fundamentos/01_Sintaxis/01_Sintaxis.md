@@ -14,6 +14,7 @@ Antes de sumergirnos en conceptos más avanzados, es importante familiarizarse c
     - [Sensibilidad a mayúsculas y minúsculas](#sensibilidad-a-mayúsculas-y-minúsculas)
   - [2. Comentarios](#2-comentarios)
   - [3. Estructura de un Programa en C++](#3-estructura-de-un-programa-en-c)
+  - [Ejemplo Practico](#ejemplo-practico)
 
 ---
 
@@ -81,5 +82,19 @@ Todo programa en **C++** necesita obligatoriamente estos elementos:
 2. **Función principal (``main``):** Es el punto de entrada y salida de cualquier aplicación en **C++**. El sistema operativo busca esta función para comenzar a ejecutar el código.
 3. **Espacio de nombres (``std``):** Se usa para evitar conflictos de nombres en las funciones estándar (como ``cout``). Se antepone ``std::`` o se declara ``using namespace std;``.
 4. Retorno (``return 0;``): Indica al sistema operativo que el programa terminó de ejecutarse correctamente sin errores.
+
+---
+
+## Ejemplo Practico
+
+- [Ejemplo Sintaxis](/01_fundamentos/01_Sintaxis/02_Ejemplo_Sintaxis.cpp)
+
+---
+
+[Inicio](#1-sintaxis-básica)
+
+---
+
+[Tabla de contenido principal](/Tabla_Contenido.md)
 
 ---
