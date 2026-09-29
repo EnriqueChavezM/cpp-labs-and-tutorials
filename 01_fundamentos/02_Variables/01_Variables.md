@@ -244,10 +244,10 @@ Esto facilita distinguir las constantes de las variables normales.
 
 La conversión de tipos es el proceso de convertir un valor de un tipo de datos a otro.
 
-En C++, podemos convertir enteros en números de doble precisión, números de doble precisión en enteros y mucho más. 
+En C++, podemos convertir enteros en números de doble precisión, números de doble precisión en enteros y mucho más.
 Hay dos tipos de conversión de tipos:
 
-1. **Conversión implícita (automática):**
+1. **Conversión implícita Entero a doble (automática):**
 
    ```cpp
    int number = 5;
@@ -262,14 +262,42 @@ Hay dos tipos de conversión de tipos:
    > Para obtener un resultado decimal, *al menos un operando debe ser un double* (por ejemplo, 7 / 2.0 da como resultado 3.5).
 
 2. **Conversión explícita (manual):**
+   - *Entero a Numero real `(int)decimal`:*
 
-   ```cpp
-   double decimal = 9.7;
-   int number = (int) decimal;  // se convierte en 9 (la parte decimal se trunca)
-   // con cálculo
-   double price = 19.99;
-   int roundedPrice = (int) price;  // se convierte en 19
-   ```
+     ```cpp
+     double decimal = 9.7;
+     int number = (int) decimal;  // se convierte en 9 (la parte decimal se trunca)
+     // con cálculo
+     double price = 19.99;
+     int roundedPrice = (int) price;  // se convierte en 19
+     ```
+
+   - *Números a Cadenas `to_String(Número)`:*
+
+     ```cpp
+     int number = 789;
+     double number2 = 789.5;
+     bool isValid = true;
+     string text1 = to_string(number);  // se convierte en "789"
+     string text2 = to_string(number2); // se convierte en "789.500000"
+     string text2 = isValid ? "true" : "false";  // se convierte en "true"
+     ```
+
+     > [!NOTA]
+     > Cuando conviertes un número ``double`` en una cadena usando ``to_string()``, de forma predeterminada **mostrará 6 decimales**, incluso si el número original no tiene tantos decimales.
+
+   - *Cadena a Numero `stoi(Número Entero en Texto)` y `stod(Número Decimal en Texto)`:*
+
+     ```cpp
+     string numberText = "123";
+     int number = stoi(numberText);  // se convierte en 123
+
+     string decimalText = "45.67";
+     double decimal = stod(decimalText);  // se convierte en 45.67
+     ```
+
+     > [!NOTA]
+     > Al convertir cadenas en números, estas funciones leen tantos caracteres válidos **(Números)** como sea posible desde el inicio de la cadena. Solo generan un error si la cadena comienza con un carácter no válido **(Letras, Símbolos)**.
 
 3. **Estilo preferido en C++ moderno:** En lugar de la conversión de estilo C ``(int) decimal``, es una práctica recomendada usar ``static_cast<>()``, ya que es más segura y expresa con mayor claridad tu intención:
    **Ejemplo:**
