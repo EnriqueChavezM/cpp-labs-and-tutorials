@@ -66,9 +66,9 @@ Saber qué forma usar es importante en la práctica. **Por ejemplo**, en un jueg
 
 ## Ejemplo Practico
 
-1. [Operadores Aritméticos Simples](/01_fundamentos/03_Operadores/02_Aritmeticos.cpp)
-2. [Operador Módulo](/01_fundamentos/03_Operadores/03_Operador_Módulo.cpp)
-3. [Operadores Incremento/Decremento](/01_fundamentos/03_Operadores/04_Operadores_Incremento_Decremento.cpp)
+1. [Operadores Aritméticos Simples](/01_fundamentos/04_Operadores/02_Aritmeticos.cpp)
+2. [Operador Módulo](/01_fundamentos/04_Operadores/03_Operador_Módulo.cpp)
+3. [Operadores Incremento/Decremento](/01_fundamentos/04_Operadores/04_Operadores_Incremento_Decremento.cpp)
 
 ---
 
