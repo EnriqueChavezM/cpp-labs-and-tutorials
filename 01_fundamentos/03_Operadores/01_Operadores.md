@@ -9,6 +9,7 @@ Los operadores se utilizan para realizar operaciones sobre valores.
 - [3. Operadores](#3-operadores)
   - [Tabla de Contenido](#tabla-de-contenido)
   - [Operadores aritméticos](#operadores-aritméticos)
+    - [Operadores Incremento / Decremento](#operadores-incremento--decremento)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -30,11 +31,44 @@ Los operadores son símbolos especiales que representan cálculos simples, como 
 > Los mismos operadores aritméticos **(+, -, *, /)** funcionan con ``doubles`` al igual que lo hacen con los enteros
 > No se puede usar el operador de módulo % directamente con números de punto flotante (doubles). En su lugar, debe usar la función ``fmod()`` *[Ver información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-cmath)*.
 
+### Operadores Incremento / Decremento
+
+Los operadores de incremento y decremento se utilizan para aumentar o disminuir el **valor de una variable en 1**. Estos operadores son ampliamente utilizados en programación, especialmente en bucles y contadores.
+El operador de incremento se representa con dos signos más `++`, y el operador de decremento se representa con dos signos menos `--`.
+
+***Sintaxis***
+
+```cpp
+variable ++;  // Incrementa el valor sumando 1
+variable --;  // Reduce el valor restando 1
+```
+
+Estos operadores tienen dos formas:
+
+1. **Prefija:** incrementa/decrementa la variable y después devuelve el nuevo valor.
+2. **Postfija:** devuelve el valor actual de la variable y después la incrementa/decrementa.
+
+- **Ejemplo**
+
+  ```cpp
+  int x = 5;
+  int y = x++;  // y = 5, x = 6 (postfijo: y obtiene el valor original, luego x se incrementa)
+
+  int a = 5;
+  int b = ++a;  // b = 6, a = 6 (prefijo: a se incrementa primero, luego b obtiene el nuevo valor)
+  ```
+
+  En el primer caso, ``a`` y se le asigna el valor original de `x` **(5)**, y después `x` se incrementa a **6**. En el segundo caso, a se incrementa primero, y después su nuevo valor **(6)** se asigna a `b`.
+
+Saber qué forma usar es importante en la práctica. **Por ejemplo**, en un juego podrías llevar la cuenta de la puntuación de un jugador con `score++` después de cada impacto, o usar `--lives` para reflejar inmediatamente una vida perdida antes de comprobar si la partida ha terminado. En los bucles, elegir entre el prefijo y el posfijo puede afectar al valor que se utiliza en una expresión antes o después de la actualización.
+
 ---
 
 ## Ejemplo Practico
 
 1. [Operadores Aritméticos Simples](/01_fundamentos/03_Operadores/02_Aritmeticos.cpp)
+2. [Operador Módulo](/01_fundamentos/03_Operadores/03_Operador_Módulo.cpp)
+3. [Operadores Incremento/Decremento](/01_fundamentos/03_Operadores/04_Operadores_Incremento_Decremento.cpp)
 
 ---
 
