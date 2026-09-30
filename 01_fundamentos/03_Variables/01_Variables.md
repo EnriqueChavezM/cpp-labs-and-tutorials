@@ -316,11 +316,12 @@ Hay dos tipos de conversión de tipos:
 
 ## Ejemplo Practico
 
-- [Números Enteros](/01_fundamentos/02_Variavles/02_Numeros_Enteros.cpp)
-- [Números Reales](/01_fundamentos/02_Variavles/03_Numeros_Reales.cpp)
-- [Variables String](/01_fundamentos/02_Variavles/04_Char_String.cpp)
-- [Variables Boolean](/01_fundamentos/02_Variavles/05_Boolean.cpp)
-- [Variables Constantes](/01_fundamentos/02_Variavles/06_Const.cpp)
+1. [Números Enteros](/01_fundamentos/03_Variavles/02_Numeros_Enteros.cpp)
+2. [Números Reales](/01_fundamentos/03_Variavles/03_Numeros_Reales.cpp)
+3. [Variables String](/01_fundamentos/03_Variavles/04_Char_String.cpp)
+4. [Variables Boolean](/01_fundamentos/03_Variavles/05_Boolean.cpp)
+5. [Variables Constantes](/01_fundamentos/03_Variavles/06_Const.cpp)
+6. [Casting de variables](/01_fundamentos/03_Variables/07_Casting.cpp)
 
 ---
 
