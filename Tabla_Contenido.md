@@ -5,14 +5,21 @@
 ## 1. Fundamentos
 
 1. [Sintaxis](/01_fundamentos/01_Sintaxis/01_Sintaxis.md)
-2. [Variables](/01_fundamentos/02_Variavles/01_Variables.md)
+2. [Entradas y Salidas]
+3. [Variables](/01_fundamentos/03_Variavles/01_Variables.md)
+4. [Operadores](/01_fundamentos/04_Operadores/01_Operadores.md)
 
 ---
 
-## 2. Retos y Ejercicios
+## 2. Módulos y Librerías
+
+1. []
+2. [Librerías Estándar](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md)
+
+## 5. Retos y Ejercicios
 
 1. Coddy
-   1. [Fundamentos](/02_Retos_Ejercicios/01_Coddy/01-Fundamentos/)
+   1. [Fundamentos](/05_Retos_Ejercicios/01_Coddy/01-Fundamentos/)
 
 ---
 
