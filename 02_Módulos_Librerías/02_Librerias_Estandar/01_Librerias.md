@@ -8,9 +8,36 @@ La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones 
 
 - [2. Librerías Estándar](#2-librerías-estándar)
   - [Tabla de contenido](#tabla-de-contenido)
+  - [Modulo `string`](#modulo-string)
+    - [¿Que contiene `string`?](#que-contiene-string)
   - [Modulo `cmath`](#modulo-cmath)
     - [Funciones más comunes de ``cmath``](#funciones-más-comunes-de-cmath)
   - [Ejemplo Practico](#ejemplo-practico)
+
+---
+
+## Modulo `string`
+
+Es la librería estándar que proporciona la clase ``std::string``, la cual se utiliza para crear, manipular y gestionar cadenas de texto de forma dinámica y segura.
+
+### ¿Que contiene `string`?
+
+Incluir ``#include <string>`` en el código da acceso a:
+
+1. **El tipo de dato ``std::string``:** Te permite declarar variables para almacenar texto.
+2. **Operadores sobrecargados:**
+   1. **Unión/Concatenación (+, +=):** `string resultado = "Hola " + "Mundo";`
+   2. **Comparación (==, !=, <, >):** `if (texto1 == texto2)`
+   3. **Acceso a caracteres ([]):** `char primeraLetra = texto[0];`
+3. **Métodos miembros útiles:**
+  | Método | ¿Qué hace? | Ejemplo |
+  | :---: | :--- | :---: |
+  | `length() / size()` | Devuelve el número de caracteres del texto. | `texto.length()` |
+  | `empty()` | Devuelve true si la cadena está vacía (""). | `if (texto.empty())` |
+  | `compare()` | Compara dos cadenas o sub-cadenas alfabéticamente. | `texto1.compare(texto2)` |
+  | `substr(pos, len)` | Extrae una parte del texto. | `texto.substr(0, 4)` |
+  | `find("texto")` | Busca la posición donde aparece una palabra o carácter. | `texto.find("hola")` |
+  | `clear()` | Borra todo el contenido de la variable. | `texto.clear()` |
 
 ---
 
