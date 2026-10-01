@@ -102,6 +102,8 @@ Los operadores de comparación se utilizan para comparar dos valores, que pueden
 1. [Operadores Aritméticos Simples](/01_fundamentos/04_Operadores/02_Aritmeticos.cpp)
 2. [Operador Módulo](/01_fundamentos/04_Operadores/03_Operador_Módulo.cpp)
 3. [Operadores Incremento/Decremento](/01_fundamentos/04_Operadores/04_Operadores_Incremento_Decremento.cpp)
+4. [Operadores de Asignación](/01_fundamentos/04_Operadores/05_Operadores_Asignacion.cpp)
+5. [Operadores de Comparación](/01_fundamentos/04_Operadores/06_Operadores_Comparacion.cpp)
 
 ---
 
