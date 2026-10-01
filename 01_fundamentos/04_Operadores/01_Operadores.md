@@ -8,13 +8,15 @@ Los operadores se utilizan para realizar operaciones sobre valores.
 
 - [3. Operadores](#3-operadores)
   - [Tabla de Contenido](#tabla-de-contenido)
-  - [Operadores aritméticos](#operadores-aritméticos)
+  - [Operadores Aritméticos](#operadores-aritméticos)
     - [Operadores Incremento / Decremento](#operadores-incremento--decremento)
+    - [Operadores Aritméticos de Asignación](#operadores-aritméticos-de-asignación)
+  - [Operaciones de Comparación](#operaciones-de-comparación)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
 
-## Operadores aritméticos
+## Operadores Aritméticos
 
 Los operadores son símbolos especiales que representan cálculos simples, como la suma y la multiplicación.
 
@@ -61,6 +63,37 @@ Estos operadores tienen dos formas:
   En el primer caso, ``a`` y se le asigna el valor original de `x` **(5)**, y después `x` se incrementa a **6**. En el segundo caso, a se incrementa primero, y después su nuevo valor **(6)** se asigna a `b`.
 
 Saber qué forma usar es importante en la práctica. **Por ejemplo**, en un juego podrías llevar la cuenta de la puntuación de un jugador con `score++` después de cada impacto, o usar `--lives` para reflejar inmediatamente una vida perdida antes de comprobar si la partida ha terminado. En los bucles, elegir entre el prefijo y el posfijo puede afectar al valor que se utiliza en una expresión antes o después de la actualización.
+
+### Operadores Aritméticos de Asignación
+
+Los operadores de asignación son aquellos que se utilizan para asignar un valor a una variable.
+
+| Operador | Ejemplo | Equivalencia |
+| :---: | :---: | :---: |
+| = | X = 2 | X = 2 |
+| += | X += 2 | X = X + 2 |
+| -= | X -= 2 | X = X - 2 |
+| *= | X *= 2 | X = X * 2 |
+| /= | X /= 2 | X = X / 2 |
+| %= | X %= 2 | X = X % 2 |
+
+---
+
+## Operaciones de Comparación
+
+Los operadores de comparación se utilizan para comparar dos valores, que pueden ser números, caracteres, cadenas de caracteres, constantes o variables. El operador de comparación devuelve ``true`` si la comparación es correcta o ``false`` de lo contrario.
+
+| Símbolo | Descripción | Ejemplo | Resultado |
+| :---: | :---: | :---: | :---: |
+| == | Igual que | X = (‘a’ == ‘b’) | X = False |
+| != | Distinto que | X = (‘a’ != ‘b’) | X = True |
+| < | Menor que | X = (1 < 10) | X = True |
+| > | Mayor que | X = (11 > 22) | X = False |
+| <= | Menor o igual que | X = (12 <= 15) | X = True |
+| >= | Mayor o igual que | X = (12 >= 15) | X = False |
+
+> [!TIP]
+> Se puede realizar comparación de cadenas también con el método `compare()`*[Ver Información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-string)
 
 ---
 
