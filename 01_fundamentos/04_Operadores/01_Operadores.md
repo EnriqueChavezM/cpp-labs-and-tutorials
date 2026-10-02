@@ -12,6 +12,7 @@ Los operadores se utilizan para realizar operaciones sobre valores.
     - [Operadores Incremento / Decremento](#operadores-incremento--decremento)
     - [Operadores Aritméticos de Asignación](#operadores-aritméticos-de-asignación)
   - [Operaciones de Comparación](#operaciones-de-comparación)
+  - [Operadores Lógicos](#operadores-lógicos)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -97,6 +98,24 @@ Los operadores de comparación se utilizan para comparar dos valores, que pueden
 
 ---
 
+## Operadores Lógicos
+
+Los operadores lógicos se utilizan para comprobar combinaciones de comparaciones que devuelven `true` o `false`.
+
+| Operador | Significado |
+| :---: | :--- |
+| **&&** | Es una “y” lógica que devuelve un resultado *True* solo si todos sus operadores son *True* |
+| **&#124;&#124;** | Es una “o” lógica que devuelve un resultado *True* solo si alguno sus operadores son *True* |
+| **!** | Es una negación que devuelve un resultado *True* si su argumento es *False* |
+
+> [!NOTA]
+> Al comprobar varias condiciones, el ordenador deja de comprobarlas en cuanto conoce el resultado Final (esto se denomina evaluación de cortocircuito).
+> Con `&&` (AND), si la primera condición es falsa, la segunda no se evaluará
+> Con `||` (OR), si la primera condición es verdadera, la segunda no se evaluará
+> Esto evita errores **(como la división entre cero)** y optimiza el rendimiento al evitar evaluaciones innecesarias.
+
+---
+
 ## Ejemplo Practico
 
 1. [Operadores Aritméticos Simples](/01_fundamentos/04_Operadores/02_Aritmeticos.cpp)
@@ -104,6 +123,7 @@ Los operadores de comparación se utilizan para comparar dos valores, que pueden
 3. [Operadores Incremento/Decremento](/01_fundamentos/04_Operadores/04_Operadores_Incremento_Decremento.cpp)
 4. [Operadores de Asignación](/01_fundamentos/04_Operadores/05_Operadores_Asignacion.cpp)
 5. [Operadores de Comparación](/01_fundamentos/04_Operadores/06_Operadores_Comparacion.cpp)
+6. [Operadores Lógicos](/01_fundamentos/04_Operadores/07_Operadores_logicos.cpp)
 
 ---
 
