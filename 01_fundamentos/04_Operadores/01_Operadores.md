@@ -1,4 +1,4 @@
-# 3. Operadores
+# 4. Operadores
 
 Los operadores se utilizan para realizar operaciones sobre valores.
 
@@ -6,7 +6,7 @@ Los operadores se utilizan para realizar operaciones sobre valores.
 
 ## Tabla de Contenido
 
-- [3. Operadores](#3-operadores)
+- [4. Operadores](#4-operadores)
   - [Tabla de Contenido](#tabla-de-contenido)
   - [Operadores Aritméticos](#operadores-aritméticos)
     - [Operadores Incremento / Decremento](#operadores-incremento--decremento)
@@ -127,7 +127,7 @@ Los operadores lógicos se utilizan para comprobar combinaciones de comparacione
 
 ---
 
-[Inicio](#3-operadores)
+[Inicio](#4-operadores)
 
 ---
 
