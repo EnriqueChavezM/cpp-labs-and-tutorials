@@ -41,9 +41,9 @@ if (Condición){
 title: Estructura if
 ---
 graph TD
-    A([Inicio]) --> B{if (Condición)}
-    B -- Sí --> C[Acción a Realizar si la condición es verdad]
-    B -- No --> D([Fin])
+    A(["Inicio"]) --> B{"if (Condición)"}
+    B -- Sí --> C["Acción a Realizar si la condición es verdad"]
+    B -- No --> D("[Fin]")
     C --> D
 ```
 
@@ -69,10 +69,10 @@ else{
 title: Estructura if - else
 ---
 graph TD
-    A([Inicio]) --> B{if (Condición)}
-    B -- Sí --> C[Acción a Realizar]
-    B -- No --> D[Acción a Realizar]
-    C --> E([Fin])
+    A(["Inicio"]) --> B{"if (Condición)"}
+    B -- Sí --> C["Acción a Realizar"]
+    B -- No --> D["Acción a Realizar"]
+    C --> E(["Fin"])
     D --> E
 ```
 
@@ -101,12 +101,12 @@ else{
 title: Estructura if - else if - else
 ---
 graph TD
-    A([Inicio]) --> B{if (Condición)}
-    B -- Sí --> C[Acción a Realizar]
-    B -- No --> D{elif (Condición)}
-    D -- Sí --> E[Acción a Realizar]
-    D -- No --> F[Acción a Realizar]
-    C --> G([Fin])
+    A(["Inicio"]) --> B{"if (Condición)"}
+    B -- Sí --> C["Acción a Realizar"]
+    B -- No --> D{"elif (Condición)"}
+    D -- Sí --> E["Acción a Realizar"]
+    D -- No --> F["Acción a Realizar"]
+    C --> G(["Fin"])
     E --> G
     F --> G
 ```
