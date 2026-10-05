@@ -59,6 +59,10 @@ int main() {
 
     // La expresión lógica completa
     bool result = (isSunny == true) && (windSpeed < 10) && (solarPanelOutput < 15) && (temperature > 20 || !isCloudy);
+    
+    /*Opción de Solución dada por CODDY
+    bool result = isSunny && windSpeed < 10 && solarPanelOutput < 15 && (temperature > 20 || !isCloudy);
+    */
 
     // Imprimir resultados
     std::cout << "1. Is it sunny? " << std::boolalpha << isSunny << std::endl;
