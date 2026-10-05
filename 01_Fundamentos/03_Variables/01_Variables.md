@@ -33,7 +33,8 @@ Las variables definidas dentro de una función tienen un alcance local, lo que s
 ## Declaración de variables
 
 Declarar una variable **implica especificar su tipo y darle un nombre**. Asignar un valor a una variable es darle un valor inicial o modificar su valor existente. **C++ no inicializa automáticamente las variables con valores por defecto**. Las variables no inicializadas *contienen basura binaria* (un valor aleatorio) hasta que se les asigna un valor explícitamente.
-La sintaxis básica para declarar una variable es:
+
+***Sintaxis básica:***
 
 ```cpp
 tipo nombre = valor;
@@ -49,7 +50,7 @@ tipo nombre = valor;
 int edad;
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Una vez que se declara una variable con un tipo determinado, solo puede contener valores de ese tipo.
 > **Por ejemplo**, una variable ``int`` solo puede contener valores enteros, y una variable ``std::string`` solo puede contener texto.
 
@@ -90,12 +91,18 @@ En programación, es importante seguir las convenciones de nomenclatura para man
 
 Además de estas reglas, existen algunas convenciones comunes de nomenclatura que los desarrolladores usan para hacer que su código sea más coherente y legible:
 
-1. **camelCase:** las palabras se unen, y cada palabra después de la primera comienza con una letra mayúscula (por ejemplo, `totalAmount`, `numberOfStudents`). Se usa comúnmente para *nombres de variables y funciones* en C++.
-2. **PascalCase:** es similar a camelCase, pero la primera palabra también comienza con una letra mayúscula (por ejemplo, ``TotalAmount``, `MyClass`). Se usa comúnmente para *nombres de clases* en C++.
-3. **snake_case:** las palabras están todas en minúsculas y separadas por guiones bajos (por ejemplo, ``total_amount``, ``number_of_students``). Se usa a menudo en C++ para *nombres de archivos*.
-4. **SCREAMING_SNAKE_CASE:** como snake_case, pero todo está en mayúsculas (por ejemplo, ``MAX_SIZE``, ``TOTAL_AMOUNT``). Normalmente se usa para *nombrar constantes y macros* en C++.
-5. Sé descriptivo y evita los nombres demasiado cortos (por ejemplo, ``numberOfStudents`` es mejor que ``n``).
-6. Evita usar nombres de variables de una sola letra, excepto para contadores simples (por ejemplo, ``i``, `j`, `k`).
+1. **camelCase:**
+   Las palabras se unen, y cada palabra después de la primera comienza con una letra mayúscula (por ejemplo, `totalAmount`, `numberOfStudents`). Se usa comúnmente para *nombres de variables y funciones* en C++.
+2. **PascalCase:**
+   Es similar a camelCase, pero la primera palabra también comienza con una letra mayúscula (por ejemplo, ``TotalAmount``, `MyClass`). Se usa comúnmente para *nombres de clases* en C++.
+3. **snake_case:**
+   Las palabras están todas en minúsculas y separadas por guiones bajos (por ejemplo, ``total_amount``, ``number_of_students``). Se usa a menudo en C++ para *nombres de archivos*.
+4. **SCREAMING_SNAKE_CASE:**
+   Como snake_case, pero todo está en mayúsculas (por ejemplo, ``MAX_SIZE``, ``TOTAL_AMOUNT``). Normalmente se usa para *nombrar constantes y macros* en C++.
+5. **Sé descriptivo y evita los nombres demasiado cortos**
+   (por ejemplo, ``numberOfStudents`` es mejor que ``n``).
+6. **Evita usar nombres de variables de una sola letra, excepto para contadores simples**
+   (por ejemplo, ``i``, `j`, `k`).
 
 ---
 
@@ -132,7 +139,7 @@ Los *números reales* suelen representarse mediante dos tipos de datos principal
   float price = 99.99f;
   ```
 
-  > [!NOTA]
+  > [!NOTE]
   > La ``f`` (o 'F') al final de un número decimal se denomina sufijo literal y le indica explícitamente al compilador que este número debe tratarse como un ``float``.
 
 - ``double`` se utiliza para almacenar números con un punto decimal, pero **con doble precisión**. ``float`` normalmente tiene 7 dígitos decimales de precisión, mientras que double normalmente tiene entre 15 y 17 dígitos decimales de precisión.
@@ -166,7 +173,7 @@ Para usar cadenas, debes incluir la directiva en la parte superior del código:
 #include <string>
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Aunque el código podría funcionar sin ``#include <string>`` **(porque otros encabezados como ``<iostream>`` podrían incluirlo indirectamente)**, se considera una mala práctica depender de inclusiones indirectas. **Incluye siempre explícitamente** los encabezados que uses directamente en tu código.
 
 También es necesitas gestionar el espacio de nombres de una de estas dos maneras:
@@ -184,7 +191,7 @@ También es necesitas gestionar el espacio de nombres de una de estas dos manera
    // Esto funciona porque usamos explícitamente std::
    ```
 
-> [!NOTA]
+> [!NOTE]
 > Las variables de cadena utiliza comillas dobles.
 > Ambos métodos requieren ``#include <string>``. La única diferencia es si quieres escribir 'std::' antes de 'string' o no.
 
@@ -257,7 +264,7 @@ Hay dos tipos de conversión de tipos:
    double result = x / 2.0; // el resultado es 3.5
    ```
 
-   > [!NOTA]
+   > [!NOTE]
    > Al dividir dos valores int, C++ realiza una división entera: se descarta la parte decimal (Por ejemplo, 7 / 2 da como resultado 3, no 3.5).
    > Para obtener un resultado decimal, *al menos un operando debe ser un double* (por ejemplo, 7 / 2.0 da como resultado 3.5).
 
@@ -283,7 +290,7 @@ Hay dos tipos de conversión de tipos:
      string text2 = isValid ? "true" : "false";  // se convierte en "true"
      ```
 
-     > [!NOTA]
+     > [!NOTE]
      > Cuando conviertes un número ``double`` en una cadena usando ``to_string()``, de forma predeterminada **mostrará 6 decimales**, incluso si el número original no tiene tantos decimales.
 
    - *Cadena a Numero `stoi(Número Entero en Texto)` y `stod(Número Decimal en Texto)`:*
@@ -296,7 +303,7 @@ Hay dos tipos de conversión de tipos:
      double decimal = stod(decimalText);  // se convierte en 45.67
      ```
 
-     > [!NOTA]
+     > [!NOTE]
      > Al convertir cadenas en números, estas funciones leen tantos caracteres válidos **(Números)** como sea posible desde el inicio de la cadena. Solo generan un error si la cadena comienza con un carácter no válido **(Letras, Símbolos)**.
 
 3. **Estilo preferido en C++ moderno:** En lugar de la conversión de estilo C ``(int) decimal``, es una práctica recomendada usar ``static_cast<>()``, ya que es más segura y expresa con mayor claridad tu intención:
@@ -309,18 +316,18 @@ Hay dos tipos de conversión de tipos:
    int roundedPrice = static_cast<int>(price);  // se convierte en 19
    ```
 
-   > [!NOTA]
+   > [!NOTE]
    > Tanto ``(int) value`` como ``static_cast<int>(value)`` producen el mismo resultado aquí, pero ``static_cast<>()`` es el enfoque recomendado en C++ moderno, ya que hace que la conversión sea claramente visible y el compilador la comprueba.
 
 ---
 
 ## Ejemplo Practico
 
-1. [Números Enteros](/01_Fundamentos/03_Variavles/02_Numeros_Enteros.cpp)
-2. [Números Reales](/01_Fundamentos/03_Variavles/03_Numeros_Reales.cpp)
-3. [Variables String](/01_Fundamentos/03_Variavles/04_Char_String.cpp)
-4. [Variables Boolean](/01_Fundamentos/03_Variavles/05_Boolean.cpp)
-5. [Variables Constantes](/01_Fundamentos/03_Variavles/06_Const.cpp)
+1. [Números Enteros](/01_Fundamentos/03_Variables/02_Numeros_Enteros.cpp)
+2. [Números Reales](/01_Fundamentos/03_Variables/03_Numeros_Reales.cpp)
+3. [Variables String](/01_Fundamentos/03_Variables/04_Char_String.cpp)
+4. [Variables Boolean](/01_Fundamentos/03_Variables/05_Boolean.cpp)
+5. [Variables Constantes](/01_Fundamentos/03_Variables/06_Const.cpp)
 6. [Casting de variables](/01_Fundamentos/03_Variables/07_Casting.cpp)
 
 ---
