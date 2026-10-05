@@ -6,7 +6,7 @@
 
 1. [Sintaxis](/01_Fundamentos/01_Sintaxis/01_Sintaxis.md)
 2. [Entradas y Salidas]
-3. [Variables](/01_Fundamentos/03_Variavles/01_Variables.md)
+3. [Variables](/01_Fundamentos/03_Variables/01_Variables.md)
 4. [Operadores](/01_Fundamentos/04_Operadores/01_Operadores.md)
 5. [Estructuras de Control](/01_Fundamentos/05_Estructuras_de_Control/01_Estructuras_de_Control.md)
 
