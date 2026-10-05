@@ -8,6 +8,7 @@
 2. [Entradas y Salidas]
 3. [Variables](/01_fundamentos/03_Variavles/01_Variables.md)
 4. [Operadores](/01_fundamentos/04_Operadores/01_Operadores.md)
+5. [Estructuras de Control](/01_fundamentos/05_Estructuras_de_Control/01_Estructuras_de_Control.md)
 
 ---
 
