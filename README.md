@@ -64,7 +64,7 @@ C++ es un lenguaje de programación potente y de alto rendimiento, utilizado en 
 
 ## 📒 Bibliografía
 
-- 📖 **[Curso de programación en C++, Apuntes de clase.](/docs/02_Bibliografía/curso_programacion_C++_Apuntes_Clase.pdf) - *Sergio Talens Oliag*
+- 📖 **[Curso de programación en C++, Apuntes de clase.](/docs/02_Bibliografía/curso_programacion_C++_Apuntes_Clase.pdf)** - *Sergio Talens Oliag*
 
 ---
 
