@@ -87,7 +87,7 @@ Todo programa en **C++** necesita obligatoriamente estos elementos:
 
 ## Ejemplo Practico
 
-- [Ejemplo Sintaxis](/01_fundamentos/01_Sintaxis/02_Ejemplo_Sintaxis.cpp)
+- [Ejemplo Sintaxis](/01_Fundamentos/01_Sintaxis/02_Ejemplo_Sintaxis.cpp)
 
 ---
 
