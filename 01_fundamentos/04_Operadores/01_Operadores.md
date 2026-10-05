@@ -118,12 +118,12 @@ Los operadores lógicos se utilizan para comprobar combinaciones de comparacione
 
 ## Ejemplo Practico
 
-1. [Operadores Aritméticos Simples](/01_fundamentos/04_Operadores/02_Aritmeticos.cpp)
-2. [Operador Módulo](/01_fundamentos/04_Operadores/03_Operador_Módulo.cpp)
-3. [Operadores Incremento/Decremento](/01_fundamentos/04_Operadores/04_Operadores_Incremento_Decremento.cpp)
-4. [Operadores de Asignación](/01_fundamentos/04_Operadores/05_Operadores_Asignacion.cpp)
-5. [Operadores de Comparación](/01_fundamentos/04_Operadores/06_Operadores_Comparacion.cpp)
-6. [Operadores Lógicos](/01_fundamentos/04_Operadores/07_Operadores_logicos.cpp)
+1. [Operadores Aritméticos Simples](/01_Fundamentos/04_Operadores/02_Aritmeticos.cpp)
+2. [Operador Módulo](/01_Fundamentos/04_Operadores/03_Operador_Módulo.cpp)
+3. [Operadores Incremento/Decremento](/01_Fundamentos/04_Operadores/04_Operadores_Incremento_Decremento.cpp)
+4. [Operadores de Asignación](/01_Fundamentos/04_Operadores/05_Operadores_Asignacion.cpp)
+5. [Operadores de Comparación](/01_Fundamentos/04_Operadores/06_Operadores_Comparacion.cpp)
+6. [Operadores Lógicos](/01_Fundamentos/04_Operadores/07_Operadores_logicos.cpp)
 
 ---
 
