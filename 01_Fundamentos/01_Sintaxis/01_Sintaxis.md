@@ -91,7 +91,7 @@ Todo programa en **C++** necesita obligatoriamente estos elementos:
 
 ---
 
-[Inicio](#1-sintaxis-básica)
+[Inicio](#1-sintaxis-básica-y-estructura-de-un-programa-en-c)
 
 ---
 
