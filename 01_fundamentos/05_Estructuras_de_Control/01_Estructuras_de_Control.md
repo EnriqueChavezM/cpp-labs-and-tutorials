@@ -103,7 +103,7 @@ title: Estructura if - else if - else
 graph TD
     A(["Inicio"]) --> B{"if (Condición)"}
     B -- Sí --> C["Acción a Realizar"]
-    B -- No --> D{"elif (Condición)"}
+    B -- No --> D{"else if (Condición)"}
     D -- Sí --> E["Acción a Realizar"]
     D -- No --> F["Acción a Realizar"]
     C --> G(["Fin"])
@@ -197,9 +197,10 @@ variable = (condición1) ? valor1 : (condición2) ? valor2 : valor3;
 
 ## Ejemplo Practico
 
-1. [Estructura `if`](/01_fundamentos/05_Estructuras_de_Control/02_Estructura_if.cpp)
-2. [Estructura `if - else if - else`](/01_fundamentos/05_Estructuras_de_Control/03_Estructura_if_elseif-else.cpp)
-3. [Estructura `switch`](/01_fundamentos/05_Estructuras_de_Control/04-Estructura_Switch.cpp)
+1. [Estructura `if`](/01_Fundamentos/05_Estructuras_de_Control/02_Estructura_if.cpp)
+2. [Estructura `if - else if - else`](/01_Fundamentos/05_Estructuras_de_Control/03_Estructura_if_elseif-else.cpp)
+3. [Estructura `switch`](/01_Fundamentos/05_Estructuras_de_Control/04-Estructura_Switch.cpp)
+4. [Operador Condicional](/01_Fundamentos/05_Estructuras_de_Control/05_Operador_Condicional.cpp)
 
 ---
 
