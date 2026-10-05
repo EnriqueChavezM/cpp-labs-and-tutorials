@@ -151,7 +151,7 @@ graph TD
     F --> G([Fin])
 ```
 
-> [!NOTA]
+> [!NOTE]
 > Es posible combinar varios case dejando los  casos comunes en blanco.
 >
 > **Ejemplo**
