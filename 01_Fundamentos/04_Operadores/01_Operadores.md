@@ -29,7 +29,7 @@ Los operadores son símbolos especiales que representan cálculos simples, como 
 | / | División | Divide el primer número entre el segundo y da decimales | V = 4 / 2 = 2 |
 | % | Modulo | Da el residuo o resto de una división | V = 10 % 3 = 1 |
 
-> [!NOTA]
+> [!NOTE]
 > Al trabajar con **números decimales**, usamos el tipo de datos ``double``, que puede almacenar números con puntos decimales.
 > Los mismos operadores aritméticos **(+, -, *, /)** funcionan con ``doubles`` al igual que lo hacen con los enteros
 > No se puede usar el operador de módulo % directamente con números de punto flotante (doubles). En su lugar, debe usar la función ``fmod()`` *[Ver información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-cmath)*.
@@ -108,7 +108,7 @@ Los operadores lógicos se utilizan para comprobar combinaciones de comparacione
 | **&#124;&#124;** | Es una “o” lógica que devuelve un resultado *True* solo si alguno sus operadores son *True* |
 | **!** | Es una negación que devuelve un resultado *True* si su argumento es *False* |
 
-> [!NOTA]
+> [!NOTE]
 > Al comprobar varias condiciones, el ordenador deja de comprobarlas en cuanto conoce el resultado Final (esto se denomina evaluación de cortocircuito).
 > Con `&&` (AND), si la primera condición es falsa, la segunda no se evaluará
 > Con `||` (OR), si la primera condición es verdadera, la segunda no se evaluará
