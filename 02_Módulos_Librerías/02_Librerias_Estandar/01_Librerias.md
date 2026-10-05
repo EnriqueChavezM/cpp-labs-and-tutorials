@@ -30,6 +30,7 @@ Incluir ``#include <string>`` en el código da acceso a:
    2. **Comparación (==, !=, <, >):** `if (texto1 == texto2)`
    3. **Acceso a caracteres ([]):** `char primeraLetra = texto[0];`
 3. **Métodos miembros útiles:**
+
   | Método | ¿Qué hace? | Ejemplo |
   | :---: | :--- | :---: |
   | `length() / size()` | Devuelve el número de caracteres del texto. | `texto.length()` |
@@ -62,7 +63,8 @@ La cabecera proporciona funciones matemáticas avanzadas (como potencias, raíce
 
 ## Ejemplo Practico
 
-1. [Modulo cmath]
+1. [Modulo string](/02_Módulos_Librerías/02_Librerias_Estandar/02_Modulo_string.cpp)
+2. [Modulo cmath](/02_Módulos_Librerías/02_Librerias_Estandar/03_Modulo_cmath.cpp)
 
 ---
 
