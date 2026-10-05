@@ -1,6 +1,6 @@
 # C++ Learning Journey 💻 🚀
 <!-- markdownlint-disable MD033 -->
-<img src="/docs/01_Imágenes/Icon.png" align="left" width="100" alt=Icono>
+<img src="/docs/01_Imágenes/Icon.png" align="left" width="250" alt=Icono>
 
 Bienvenido/a a mi repositorio personal dedicado al aprendizaje, práctica y documentación del lenguaje **C++**. En este espacio voy consolidando conceptos teóricos, ejercicios prácticos, proyectos pequeños y notas sobre desarrollo de software, gestión de memoria y Programación Orientada a Objetos.
 
