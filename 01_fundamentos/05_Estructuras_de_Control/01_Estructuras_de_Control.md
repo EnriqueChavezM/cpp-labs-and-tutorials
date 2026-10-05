@@ -12,7 +12,8 @@ Nos permite controlar el flujo de ejecución de un programa.
     - [Estructura `if`](#estructura-if)
     - [Estructura `if-else`](#estructura-if-else)
     - [Estructura `if-else if-else`](#estructura-if-else-if-else)
-    - [Condicionales anidados](#condicionales-anidados)
+    - [Estructura Switch](#estructura-switch)
+    - [Operador Condicional](#operador-condicional)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -110,24 +111,86 @@ graph TD
     F --> G
 ```
 
-### Condicionales anidados
+### Estructura Switch
 
-Las instrucciones anidadas `if-else if-else` permiten tomar decisiones jerárquicas. El anidamiento puede ser infinito, lo que permite crear árboles de decisión complejos.
+Los condicionales Switch, son una estructura de control condicional, que permite definir múltiples casos que puede llegar a cumplir una variable, y qué acción tomar en cualquiera de estas situaciones, incluso es posible determinar qué acción llevar a cabo en caso de no cumplir ninguna de las condiciones dadas.
 
-***Sintaxis***
-
-```python
-if (Condición1){
-    if (Condición2){
-        # Código para cuando ambas condiciones son verdaderas
-    }
-    else {       
-        # Código para cuando Condición 2 es verdadera pero condition2 es falsa
-    }
+```cpp
+switch (variable) {
+    case valor1:
+        // Código a ejecutar si variable es igual a value1
+        break;
+    case valor2:
+        // Código a ejecutar si variable es igual a value2
+        break;
+    default:
+        // Código a ejecutar si ningún caso coincide
 }
-else {
-    # Código para cuando Condición 1 es falsa
+```
+
+*Componentes clave:*
+
+- `case`: representa un posible valor de la variable
+- `break`: sale de `switch` después de ejecutar un `case` (evita la ejecución sucesiva)
+- `default`: `case` opcional que se ejecuta si ningún otro `case` coincide
+
+**Diagrama de flujo:**
+
+```mermaid
+---
+title: Estructura Switch
+---
+graph TD
+    A(["Inicio"]) --> B{{"switch  (variable)"}}
+    B -- case valor1 --> C["Acción a Realizar"]
+    B -- case valor2 --> D["Acción a Realizar"]
+    B -- case default --> E["Acción a Realizar"]
+    C --> F[/"break"/]
+    D --> F
+    E --> F
+    F --> G([Fin])
+```
+
+> [!NOTA]
+> Es posible combinar varios case dejando los  casos comunes en blanco.
+>
+> **Ejemplo**
+
+```cpp
+switch (day) {
+    case 1:
+    case 2:
+    case 3:
+        dayName = "Start of week";
+        break;
+    default:
+        dayName = "Invalid day";
 }
+```
+
+### Operador Condicional
+
+El operador condicional es una declaración `if-else` de una sola línea. Puede reemplazar una instrucción `if-else` simple que asigna un valor a una variable.
+
+***Sintaxis:***
+
+```cpp
+variable = (condición) ? valor_if_true : valor_if_false;
+```
+
+**Ejemplo:**
+
+```cpp
+int age = 20;
+std::string message = (age >= 18) ? "Adult" : "Minor";
+```
+
+Es posible aplicar multiples condiciones
+
+***Sintaxis:***
+
+```cpp
+variable = (condición1) ? valor1 : (condición2) ? valor2 : valor3;
 ```
 
 ---
@@ -136,6 +199,7 @@ else {
 
 1. [Estructura `if`](/01_fundamentos/05_Estructuras_de_Control/02_Estructura_if.cpp)
 2. [Estructura `if - else if - else`](/01_fundamentos/05_Estructuras_de_Control/03_Estructura_if_elseif-else.cpp)
+3. [Estructura `switch`](/01_fundamentos/05_Estructuras_de_Control/04-Estructura_Switch.cpp)
 
 ---
 
