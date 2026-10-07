@@ -28,14 +28,15 @@ Es la cabecera estándar de **Entrada/Salida (I/O)** de C++. Su nombre proviene 
 
 Al incluir esta cabecera mediante `#include <iostream>`, se declaran automáticamente los principales objetos de flujo *(streams)* estándar:
 
-| Objeto | Propósito | Descripción |
-| :---: | :--- | :--- |
-| `cout` | Salida estándar *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#salida-de-datos)* | Envía datos para mostrar en la pantalla. |
-| `cin` | Entrada estándar *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#entrada-de-datos)* | Recibe datos ingresados por el usuario desde el teclado. |
-| `cerr` | Salida de errores | Imprime mensajes de error en pantalla sin usar búfer (de forma inmediata). |
-| `clog` | Registro de eventos | Salida de errores o registros (logs) gestionada con búfer. |
-| <ul><li>`left`</li><li>`right`</li></ul> | Alinea la salida | Modificadores de alineación de texto a la izquierda o derecha. |
-| `fixed` | Modificador de números flotantes. | Modificador para forzar la notación decimal fija. |
+| Objeto | Descripción | Sintaxis | Opciones |
+| :---: | :--- | :---: | :--- |
+| `cout` | Envía datos para mostrar en la pantalla. | `cout << "Texto o variable"` | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#salida-de-datos)* |
+| `cin` | Recibe datos ingresados por el usuario desde el teclado. | `cin >> nombre_variable;` | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#entrada-de-datos)* |
+| `ignore()` | Elimina caracteres del búfer de entrada. Si se llama sin parámetros, simplemente elimina el siguiente carácter que esté en el búfer. | `cin.ignore(n, delimitador);` | <ul><li>`n`(opcional): El número máximo de caracteres a descartar. Si se omite, por defecto descarte 1 carácter.</li><li>`delimitador`(opcional): Un carácter que, al ser encontrado, hace que ignore() deje de descartar. Por defecto suele usarse `'\n'` (el salto de línea).</li></ul> |
+| `cerr` | Imprime mensajes de error en pantalla sin usar búfer (de forma inmediata). | `std:cerr` | |
+| `clog` | Salida de errores o registros (logs) gestionada con búfer. | `std::clog` | |
+| <ul><li>`left`</li><li>`right`</li></ul> | Modificadores de alineación de texto a la izquierda o derecha. | <ul><li>`std::left`</li><li>`std::right`</li></ul> | |
+| `fixed` | Modificador para forzar la notación decimal fija. | `std::fixed` | |
 
 ---
 
@@ -54,15 +55,15 @@ Incluir ``#include <string>`` en el código da acceso a:
    3. **Acceso a caracteres ([]):** `char primeraLetra = texto[0];`
 3. **Métodos miembros útiles:**
 
-  | Método | ¿Qué hace? | Ejemplo |
-  | :---: | :--- | :---: |
-  | <ul><li>`length()`</li><li>`size()`</li></ul> | Devuelve el número de caracteres del texto. | `texto.length()` |
-  | `empty()` | Devuelve true si la cadena está vacía (""). | `if (texto.empty())` |
-  | `compare()` | Compara dos cadenas o sub-cadenas alfabéticamente. | `texto1.compare(texto2)` |
-  | `substr(pos, len)` | Extrae una parte del texto. | `texto.substr(0, 4)` |
-  | `find("texto")` | Busca la posición donde aparece una palabra o carácter. | `texto.find("hola")` |
-  | `clear()` | Borra todo el contenido de la variable. | `texto.clear()` |
-  | `getline()` | Función para leer líneas completas con espacios. | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#lectura-de-cadenas-de-texto-con-espacios)* |
+  | Objeto | Descripción | Ejemplo | Opciones |
+  | :---: | :--- | :---: | :--- |
+  | <ul><li>`length()`</li><li>`size()`</li></ul> | Devuelve el número de caracteres del texto. | `texto.length()` | |
+  | `empty()` | Devuelve true si la cadena está vacía (""). | `if (texto.empty())` | |
+  | `compare()` | Compara dos cadenas o sub-cadenas alfabéticamente. | `texto1.compare(texto2)` | |
+  | `substr(pos, len)` | Extrae una parte del texto. | `texto.substr(0, 4)` | |
+  | `find("texto")` | Busca la posición donde aparece una palabra o carácter. | `texto.find("hola")` | |
+  | `clear()` | Borra todo el contenido de la variable. | `texto.clear()` | |
+  | `getline()` | Función para leer líneas completas con espacios. | `getline(cin, str)` | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#lectura-de-cadenas-de-texto-con-espacios)* |
 
 ---
 
