@@ -46,13 +46,18 @@ Puedes alterar la forma en que se muestran los datos en la salida usando manipul
 
 ## Entrada de Datos
 
-El objeto `cin` utiliza el operador de extracción `>>` ("extraer de") para obtener datos introducidos por el usuario desde el teclado y guardarlos en una variable.
+El objeto `cin` utiliza el operador de extracción `>>` ("extraer de") para obtener datos introducidos por el usuario desde el teclado **(lee hasta el primer espacio en blanco)** y guardarlos en una variable. El operador de extracción convierte automáticamente la entrada al tipo de datos adecuado.
 
 ***Sintaxis***
 
 ```cpp
 cin >> nombre_variable;
 ```
+
+> [!NOTE]
+> Para valores booleanos, cin acepta:
+> **Números:** `0` (*falso*) o `1` (*verdadero*). Otros números hacen que la extracción falle.
+> **Cadenas de texto:** `true` o `false` solo si se utiliza `std::cin >> std::boolalpha`.
 
 ### Lectura de Cadenas de Texto con Espacios
 
@@ -61,8 +66,22 @@ Cuando usas `cin >> variable_string;`, la lectura se detiene al encontrar el pri
 ***Sintaxis***
 
 ```cpp
-getline(cin, variable_string);
+getline(std::cin, variable_string);
 ```
+
+Usando `cin` y `getline` (al leer después de cin):
+
+**Ejemplo:**
+
+```cpp
+int n;
+std::string str;
+std::cin >> n;
+std::cin.ignore();  // Limpiar el salto de línea del búfer de entrada
+std::getline(cin, str);
+```
+
+Usa `cin.ignore()` para eliminar el salto de línea del búfer de entrada al cambiar de `cin` a `getline()`. *[Mas información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#qué-incluye-iostream)*)
 
 ---
 
