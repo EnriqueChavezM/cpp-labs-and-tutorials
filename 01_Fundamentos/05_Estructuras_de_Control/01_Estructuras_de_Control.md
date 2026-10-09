@@ -12,8 +12,10 @@ Nos permite controlar el flujo de ejecución de un programa.
     - [Estructura `if`](#estructura-if)
     - [Estructura `if-else`](#estructura-if-else)
     - [Estructura `if-else if-else`](#estructura-if-else-if-else)
-    - [Estructura Switch](#estructura-switch)
+    - [Estructura `Switch`](#estructura-switch)
     - [Operador Condicional](#operador-condicional)
+  - [Estructura Bucle / loop](#estructura-bucle--loop)
+    - [Estructura `for`](#estructura-for)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -111,7 +113,7 @@ graph TD
     F --> G
 ```
 
-### Estructura Switch
+### Estructura `Switch`
 
 Los condicionales Switch, son una estructura de control condicional, que permite definir múltiples casos que puede llegar a cumplir una variable, y qué acción tomar en cualquiera de estas situaciones, incluso es posible determinar qué acción llevar a cabo en caso de no cumplir ninguna de las condiciones dadas.
 
@@ -191,6 +193,45 @@ Es posible aplicar multiples condiciones
 
 ```cpp
 variable = (condición1) ? valor1 : (condición2) ? valor2 : valor3;
+```
+
+---
+
+## Estructura Bucle / loop
+
+Los bucles permiten repetir un bloque de código n veces
+
+### Estructura `for`
+
+El bucle for permite repetir el código varias veces.
+
+***Sintaxis:***
+
+```cpp
+for ("v = vi"; v("Comparación")vf; vID"Actualización") {
+    //Acción a realizar
+}
+```
+
+*Componentes clave:*
+
+- `v` = Variable de control
+- `vi` = Valor inicial
+- `vf` = Valor final
+- `vID` = Actualización de variable de control puede incrementar o decremento de acuerdo con el ID
+**Diagrama de flujo:**
+
+```mermaid
+---
+title: Estructura for
+---
+graph TD
+    A(["Inicio"]) --> B[/"for  (v = vi)"\]
+    B --> C{"v(Comparación)vf"}
+    C -- SI --> D["Acción a Realizar"]
+    D --> E[/"vID(++, --)"/]
+    E --> C
+    C -- NO --> G([Fin])
 ```
 
 ---
