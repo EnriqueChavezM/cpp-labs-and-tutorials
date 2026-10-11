@@ -234,6 +234,30 @@ graph TD
     C -- NO --> G([Fin])
 ```
 
+## Estructura `while`
+
+Un bucle `while` es diferente del bucle `for`. Un bucle `for` se usa habitualmente para iterar sobre un `range` específico, mientras que un bucle `while` nos permite seguir iterando mientras se cumpla una determinada condición.
+
+***Sintaxis***
+
+```cpp
+while (condition) { 
+code
+}
+```
+
+El código se ejecutará solo si true es condition
+
+Nota: si el cuerpo del bucle contiene solo una instrucción, las llaves son opcionales:
+
+***Sintaxis***
+
+```cpp
+while (condition) code;
+```
+
+Hay muchos casos de uso en los que un bucle while resolvería el problema, pero el bucle for no. Sin embargo, ten en cuenta que un bucle for no está estrictamente limitado a iterar sobre un rango. Sus pasos de inicialización y actualización son opcionales, por lo que ambos tipos de bucle pueden comportarse de manera similar.
+
 ---
 
 ## Ejemplo Practico
