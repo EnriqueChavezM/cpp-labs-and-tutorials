@@ -16,6 +16,11 @@ Nos permite controlar el flujo de ejecución de un programa.
     - [Operador Condicional](#operador-condicional)
   - [Estructura Bucle / loop](#estructura-bucle--loop)
     - [Estructura `for`](#estructura-for)
+    - [Estructura `while`](#estructura-while)
+    - [Estructura `do while`](#estructura-do-while)
+    - [Control de Bucle](#control-de-bucle)
+      - [Control `break`](#control-break)
+      - [Control `continue`](#control-continue)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -44,7 +49,7 @@ title: Estructura if
 ---
 graph TD
     A(["Inicio"]) --> B{"if (Condición)"}
-    B -- Sí --> C["Acción a Realizar si la condición es verdad"]
+    B -- Sí --> C["Código a ejecutar si la condición es verdad"]
     B -- No --> D("[Fin]")
     C --> D
 ```
@@ -55,12 +60,12 @@ La estructura selectiva doble ``if - else`` permite toma de decisión. Si la con
 
 ***Sintaxis***
 
-```python
+```cpp
 if (Condición){
-    # Bloque de código a ejecutar si la condición es verdad
+    // Bloque de código a ejecutar si la condición es verdad
 }
 else{
-    # Bloque de código a ejecutar si la condición es falsa
+    // Bloque de código a ejecutar si la condición es falsa
     }
 ```
 
@@ -72,8 +77,8 @@ title: Estructura if - else
 ---
 graph TD
     A(["Inicio"]) --> B{"if (Condición)"}
-    B -- Sí --> C["Acción a Realizar"]
-    B -- No --> D["Acción a Realizar"]
+    B -- Sí --> C["Código a ejecutar"]
+    B -- No --> D["Código a ejecutar"]
     C --> E(["Fin"])
     D --> E
 ```
@@ -84,15 +89,15 @@ Permite establecer una serie de condiciones al interior del programa, que ayuda 
 
 ***Sintaxis***
 
-```python
+```cpp
 if (Condición){
-    # Bloque de código a ejecutar si la condición es verdad
+    // Bloque de código a ejecutar si la condición es verdad
 }
 elif (Condición){
-    # Bloque de código a ejecutar si if es falso y la condición es verdad
+    // Bloque de código a ejecutar si if es falso y la condición es verdad
 }
 else{
-    # Bloque de código a ejecutar si todas las condiciones son falsa
+    // Bloque de código a ejecutar si todas las condiciones son falsa
 }
 ```
 
@@ -104,10 +109,10 @@ title: Estructura if - else if - else
 ---
 graph TD
     A(["Inicio"]) --> B{"if (Condición)"}
-    B -- Sí --> C["Acción a Realizar"]
+    B -- Sí --> C["Código a ejecutar"]
     B -- No --> D{"else if (Condición)"}
-    D -- Sí --> E["Acción a Realizar"]
-    D -- No --> F["Acción a Realizar"]
+    D -- Sí --> E["Código a ejecutar"]
+    D -- No --> F["Código a ejecutar"]
     C --> G(["Fin"])
     E --> G
     F --> G
@@ -144,9 +149,9 @@ title: Estructura Switch
 ---
 graph TD
     A(["Inicio"]) --> B{{"switch  (variable)"}}
-    B -- case valor1 --> C["Acción a Realizar"]
-    B -- case valor2 --> D["Acción a Realizar"]
-    B -- case default --> E["Acción a Realizar"]
+    B -- case valor1 --> C["Código a ejecutar"]
+    B -- case valor2 --> D["Código a ejecutar"]
+    B -- case default --> E["Código a ejecutar"]
     C --> F[/"break"/]
     D --> F
     E --> F
@@ -209,7 +214,7 @@ El bucle for permite repetir el código varias veces.
 
 ```cpp
 for ("v = vi"; v("Comparación")vf; vID"Actualización") {
-    //Acción a realizar
+    // Código a ejecutar
 }
 ```
 
@@ -219,6 +224,7 @@ for ("v = vi"; v("Comparación")vf; vID"Actualización") {
 - `vi` = Valor inicial
 - `vf` = Valor final
 - `vID` = Actualización de variable de control puede incrementar o decremento de acuerdo con el ID
+
 **Diagrama de flujo:**
 
 ```mermaid
@@ -228,44 +234,128 @@ title: Estructura for
 graph TD
     A(["Inicio"]) --> B[/"for  (v = vi)"\]
     B --> C{"v(Comparación)vf"}
-    C -- SI --> D["Acción a Realizar"]
+    C -- SI --> D["Código a ejecutar"]
     D --> E[/"vID(++, --)"/]
     E --> C
     C -- NO --> G([Fin])
 ```
 
-## Estructura `while`
+### Estructura `while`
 
-Un bucle `while` es diferente del bucle `for`. Un bucle `for` se usa habitualmente para iterar sobre un `range` específico, mientras que un bucle `while` nos permite seguir iterando mientras se cumpla una determinada condición.
+Permite repetir un conjunto de interacciones. Sin embargo, **el número de veces** que se debe repetir **depende de la condición de finalización**. Cada vez que **inicia el ciclo se evalúa una condición**, si ésta es *verdadera* se continúa con la ejecución, de otra forma se detiene.
+
+> [WARNING!]
+> **Dentro** del ciclo **siempre debe existir un enunciado que afecte la condición**, de tal forma que aquél no se repita de manera infinita.
 
 ***Sintaxis***
 
 ```cpp
-while (condition) { 
-code
+while (condición de finalización) { 
+    Código a ejecutar
 }
 ```
 
-El código se ejecutará solo si true es condition
+> [NOTE!]
+> Si el cuerpo del bucle contiene solo una instrucción, las llaves son opcionales.
 
-Nota: si el cuerpo del bucle contiene solo una instrucción, las llaves son opcionales:
+ ***Sintaxis***
 
-***Sintaxis***
+ ```cpp
+ while (condición de finalización) Código a ejecutar;
+ ```
 
-```cpp
-while (condition) code;
+**Diagrama de flujo:**
+
+```mermaid
+---
+title: Estructura while
+---
+graph TD
+    A(["Inicio"]) --> B{"while  (condición de finalización)"}
+    B -- SI --> C["Código a ejecutar"]
+    C --> B
+    B -- NO --> D([Fin])
 ```
 
-Hay muchos casos de uso en los que un bucle while resolvería el problema, pero el bucle for no. Sin embargo, ten en cuenta que un bucle for no está estrictamente limitado a iterar sobre un rango. Sus pasos de inicialización y actualización son opcionales, por lo que ambos tipos de bucle pueden comportarse de manera similar.
+### Estructura `do while`
+
+A diferencia de las estructuras `for` y `while`, en las cuales las condiciones se evalúan al *principio del ciclo*, en ésta se **evalúan al final**. Esto implica que **el ciclo se debe ejecutar por lo menos una vez**. La estructura es adecuada cuando no sabemos el número de veces que se debe repetir un ciclo, pero conocemos que se debe ejecutar por lo menos una vez.
+
+ ***Sintaxis***
+
+ ```cpp
+ do {
+    // Código a ejecutar
+} while (condición de finalización);
+ ```
+
+**Diagrama de flujo:**
+
+```mermaid
+---
+title: Estructura do while
+---
+graph TD
+    A(["Inicio"]) --> B[/"do"/]
+    B --> C["Código a ejecutar"]
+    C --> D{"while  (condición de finalización)"}
+    D -- SI  --> B 
+    D -- NO --> E([Fin])
+```
+
+### Control de Bucle
+
+Existen algunas instrucciones especiales para controlar el flujo de ejecución dentro de los bucles.
+
+#### Control `break`
+
+Se utiliza para salir prematuramente de un bucle, independientemente de la condición. Cuando se encuentra un `break`, el **bucle se detiene** y el flujo de ejecución continúa con la siguiente instrucción fuera del bucle.
+
+**Ejemplo:**
+
+```cpp
+for (int i = 0; i < 10; i++) {
+    if (i == 6) {
+        break;
+    }
+    std::cout << i << std::endl;
+}
+```
+
+El bucle itera regularmente hasta que llega al número 6. Luego, el programa entra en la sentencia `if` y ejecuta la sentencia `break`. Esto sale del bucle inmediatamente.
+
+#### Control `continue`
+
+La instrucción `continue` detiene la iteración actual y continúa con la siguiente iteración
+
+**Ejemplo:**
+
+```cpp
+for (int i = 3; i < 9; i++) {
+    if (i == 5) {
+        continue;
+    }
+    std::cout << i << std::endl;
+}
+```
+
+Esto omitirá la iteración cuando `i=5`
 
 ---
 
 ## Ejemplo Practico
 
-1. [Estructura `if`](/01_Fundamentos/05_Estructuras_de_Control/02_Estructura_if.cpp)
-2. [Estructura `if - else if - else`](/01_Fundamentos/05_Estructuras_de_Control/03_Estructura_if_elseif-else.cpp)
-3. [Estructura `switch`](/01_Fundamentos/05_Estructuras_de_Control/04_Estructura_Switch.cpp)
-4. [Operador Condicional](/01_Fundamentos/05_Estructuras_de_Control/05_Operador_Condicional.cpp)
+1. *Estructuras Condicionales*
+   1. [Estructura `if`](/01_Fundamentos/05_Estructuras_de_Control/02_Estructura_if.cpp)
+   2. [Estructura `if - else if - else`](/01_Fundamentos/05_Estructuras_de_Control/03_Estructura_if_elseif-else.cpp)
+   3. [Estructura `switch`](/01_Fundamentos/05_Estructuras_de_Control/04_Estructura_Switch.cpp)
+   4. [Operador Condicional](/01_Fundamentos/05_Estructuras_de_Control/05_Operador_Condicional.cpp)
+2. *Estructuras Bucle / loop*
+   1. [Estructura `for`](/01_Fundamentos/05_Estructuras_de_Control/06_Estructura_for.cpp)
+   2. [Estructura `while`](/01_Fundamentos/05_Estructuras_de_Control/07_Estructura_while.cpp)
+   3. [Estructura `do while`](/01_Fundamentos/05_Estructuras_de_Control/08_Estructura_do_while.cpp)
+   4. *Control de Bucle*
+      1. [Control `break`](/01_Fundamentos/05_Estructuras_de_Control/09_Control_break.cpp)
 
 ---
 
