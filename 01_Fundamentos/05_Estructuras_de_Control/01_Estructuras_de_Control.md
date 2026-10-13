@@ -356,6 +356,7 @@ Esto omitirá la iteración cuando `i=5`
    3. [Estructura `do while`](/01_Fundamentos/05_Estructuras_de_Control/08_Estructura_do_while.cpp)
    4. *Control de Bucle*
       1. [Control `break`](/01_Fundamentos/05_Estructuras_de_Control/09_Control_break.cpp)
+      2. [Control `continue`](/01_Fundamentos/05_Estructuras_de_Control/10_Control_continue.cpp)
 
 ---
 
