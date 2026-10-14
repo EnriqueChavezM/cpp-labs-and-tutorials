@@ -245,7 +245,7 @@ graph TD
 
 Permite repetir un conjunto de interacciones. Sin embargo, **el número de veces** que se debe repetir **depende de la condición de finalización**. Cada vez que **inicia el ciclo se evalúa una condición**, si ésta es *verdadera* se continúa con la ejecución, de otra forma se detiene.
 
-> [WARNING!]
+> [!WARNING]
 > **Dentro** del ciclo **siempre debe existir un enunciado que afecte la condición**, de tal forma que aquél no se repita de manera infinita.
 
 ***Sintaxis***
@@ -256,7 +256,7 @@ while (condición de finalización) {
 }
 ```
 
-> [NOTE!]
+> [!NOTE]
 > Si el cuerpo del bucle contiene solo una instrucción, las llaves son opcionales.
 
  ***Sintaxis***

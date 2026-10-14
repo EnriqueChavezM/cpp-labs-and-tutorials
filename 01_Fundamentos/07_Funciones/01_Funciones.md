@@ -26,7 +26,7 @@ Tipo_Retorno NombreFuncion (Parameters){
 NombreFuncion (Parameters);
 ```
 
-> [NOTE!]
+> [!NOTE]
 > ¡Importante! El código de la función debe ir antes de su llamada/ejecución
 
 ---
