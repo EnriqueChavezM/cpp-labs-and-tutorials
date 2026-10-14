@@ -21,6 +21,7 @@ Nos permite controlar el flujo de ejecución de un programa.
     - [Control de Bucle](#control-de-bucle)
       - [Control `break`](#control-break)
       - [Control `continue`](#control-continue)
+    - [Bucles Infinitos](#bucles-infinitos)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -340,6 +341,30 @@ for (int i = 3; i < 9; i++) {
 ```
 
 Esto omitirá la iteración cuando `i=5`
+
+### Bucles Infinitos
+
+Un bucle infinito es un bucle que nunca se detiene porque su condición siempre es verdadera o porque no hay ninguna condición que lo detenga. Los bucles infinitos pueden ser útiles en algunos casos, como en servidores que necesitan mantenerse en ejecución hasta que se detengan manualmente. Sin embargo, en la mayoría de los casos, son problemáticos. Para detener un bucle infinito, por lo general se debe forzar la salida del programa
+
+- Bucle infinito con un bucle `while`:
+
+ ```cpp
+ while (true) {
+ std::cout << "This will print forever!" << std::endl;
+ }
+ ```
+
+ En este caso, la condición siempre es `true`, por lo que el bucle se ejecutará indefinidamente.
+
+- bucle infinito con un bucle `for`:
+
+  ```cpp
+  for (;;) {
+    std::cout << "This will also print forever!" << std::endl;
+  }
+  ```
+
+  El bucle `for` requiere dos puntos y coma, pero las tres expresiones (inicialización, condición e incremento) son opcionales. Al dejarlas vacías, no hay ninguna condición que comprobar, por lo que el bucle no tiene motivo para detenerse.
 
 ---
 
