@@ -10,6 +10,7 @@ Una función es una secuencia de código que tiene un nombre. El propósito de u
   - [Tabla de Contenido](#tabla-de-contenido)
   - [Declarar una función](#declarar-una-función)
     - [Parámetros](#parámetros)
+    - [Tipos de Retorno](#tipos-de-retorno)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -47,6 +48,25 @@ NombreFuncion (valor_1, ..., valor_n);
 
 > [!WARMING]
 > Pasar menos o más argumentos a una función que los declarados provocará que esta falle
+
+### Tipos de Retorno
+
+La instrucción `return` en una función se utiliza para especificar el valor o los valores que la función debe producir como salida.
+
+> [!WARMING]
+> El tipo de retorno de la función debe coincidir con el tipo de datos de la variable donde estás almacenando el valor devuelto.
+
+**Ejemplo:**
+
+```cpp
+int functionName() {
+    return 100;
+}
+// Llamar a la función
+int number = functionName(); // number = 100;
+```
+
+Ahora la variable number contendrá *100* porque esto es lo que devolvió la función.
 
 ---
 
