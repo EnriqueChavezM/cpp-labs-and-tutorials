@@ -12,6 +12,7 @@ Una función es una secuencia de código que tiene un nombre. El propósito de u
     - [Parámetros](#parámetros)
     - [Tipos de Retorno](#tipos-de-retorno)
   - [Sobrecarga de Funciones](#sobrecarga-de-funciones)
+  - [Funciones void](#funciones-void)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -21,12 +22,12 @@ Una función es una secuencia de código que tiene un nombre. El propósito de u
 Para declarar una función, utilizamos la siguiente sintaxis:
 
 ```cpp
-Tipo_Retorno NombreFuncion (Parameters){
+Tipo_Retorno Function_name (Parameters){
     //Código  
 }
 
 // Llamar a la función
-NombreFuncion (Parameters);
+Function_name (Parameters);
 ```
 
 > [!NOTE]
@@ -39,12 +40,13 @@ Un argumento en una función es un valor que pasas a la función cuando la llama
 ***Sintaxis***
 
 ```cpp
-Tipo_Retorno NombreFuncion (Tipo_Parametro_1 Nombre_1, ..., Tipo_Parametro_N Nombre_N){
+Tipo_Retorno Function_name (Tipo_Parameters_1 Nombre_1, ..., Tipo_Parameters_N Nombre_N){
     //Código  
 }
 
 // Llamar a la función
-NombreFuncion (valor_1, ..., valor_n);
+
+Function_name (valor_1, ..., valor_n);
 ```
 
 > [!WARMING]
@@ -60,11 +62,11 @@ La instrucción `return` en una función se utiliza para especificar el valor o 
 **Ejemplo:**
 
 ```cpp
-int functionName() {
+int Function_name() {
     return 100;
 }
 // Llamar a la función
-int number = functionName(); // number = 100;
+int number = Function_name(); // number = 100;
 ```
 
 Ahora la variable number contendrá *100* porque esto es lo que devolvió la función.
@@ -98,11 +100,29 @@ int main() {
 
 ---
 
+## Funciones void
+
+En C++, `void` es un **tipo vacío especial** que se utiliza como tipo de retorno para marcar una **función que no devuelve ningún valor**. Cuando declaras una función como `void`, indica que la función realiza una tarea o un conjunto de operaciones, pero **no produce un resultado que deba devolverse al llamador**. Las funciones `void` se utilizan cuando quieres realizar acciones como imprimir resultados, modificar estados de objetos o ejecutar una secuencia de instrucciones sin devolver un valor específico.
+
+***Sintaxis***
+
+```cpp
+void Function_name(parameters) {
+    // Código a ejecutar
+}
+
+//llamar función
+Function_name(parameters);
+```
+
+---
+
 ## Ejemplo Practico
 
 1. [Declarar una función](/01_Fundamentos/07_Funciones/02_Declarar_Función.cpp)
    1. [Parámetros](/01_Fundamentos/07_Funciones/03_Parametros.cpp)
    2. [Tipos de Retorno](/01_Fundamentos/07_Funciones/04_Tipos_retorno.cpp)
+2. [Función `void`](/01_Fundamentos/07_Funciones/05_Funcion_void.cpp)
 
 ---
 
