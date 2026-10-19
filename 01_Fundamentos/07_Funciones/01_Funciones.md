@@ -11,6 +11,7 @@ Una función es una secuencia de código que tiene un nombre. El propósito de u
   - [Declarar una función](#declarar-una-función)
     - [Parámetros](#parámetros)
     - [Tipos de Retorno](#tipos-de-retorno)
+  - [Sobrecarga de Funciones](#sobrecarga-de-funciones)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -70,10 +71,38 @@ Ahora la variable number contendrá *100* porque esto es lo que devolvió la fun
 
 ---
 
+## Sobrecarga de Funciones
+
+La sobrecarga de funciones es una característica en donde dos o más funciones pueden tener el mismo nombre pero diferentes parámetros. Cuando **llamas a una función sobrecargada**, el **compilador determina la definición más apropiada** a utilizar comparando los tipos de argumentos que has usado en la llamada con los tipos de parámetros especificados en las definiciones.
+
+> [!WARMING]
+> Si no se encuentra ninguna función coincidente, el compilador generará un error.
+> Es importante tener en cuenta que el tipo de retorno por sí solo no es suficiente para sobrecargar una función.
+> Las funciones deben diferir en sus listas de parámetros.
+
+**Ejemplo:**
+
+```cpp
+int add(int a, int b) {
+    return a + b;
+}
+double add(double a, double b) {
+    return a + b;
+}
+int main() {
+    int sum1 = add(5, 3); // Llama a la primera versión de add
+    double sum2 = add(2.5, 3.7); // Llama a la segunda versión de add
+    return 0;
+}
+```
+
+---
+
 ## Ejemplo Practico
 
 1. [Declarar una función](/01_Fundamentos/07_Funciones/02_Declarar_Función.cpp)
    1. [Parámetros](/01_Fundamentos/07_Funciones/03_Parametros.cpp)
+   2. [Tipos de Retorno](/01_Fundamentos/07_Funciones/04_Tipos_retorno.cpp)
 
 ---
 
