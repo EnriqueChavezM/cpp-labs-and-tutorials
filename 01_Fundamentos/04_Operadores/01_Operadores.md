@@ -32,7 +32,7 @@ Los operadores son símbolos especiales que representan cálculos simples, como 
 > [!NOTE]
 > Al trabajar con **números decimales**, usamos el tipo de datos ``double``, que puede almacenar números con puntos decimales.
 > Los mismos operadores aritméticos **(+, -, *, /)** funcionan con ``doubles`` al igual que lo hacen con los enteros
-> No se puede usar el operador de módulo % directamente con números de punto flotante (doubles). En su lugar, debe usar la función ``fmod()`` *[Ver información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-cmath)*.
+> No se puede usar el operador de módulo % directamente con números de punto flotante (doubles). En su lugar, debe usar la función ``fmod()`` *[Ver información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-cmath)*.
 
 ### Operadores Incremento / Decremento
 
@@ -94,7 +94,7 @@ Los operadores de comparación se utilizan para comparar dos valores, que pueden
 | >= | Mayor o igual que | X = (12 >= 15) | X = False |
 
 > [!TIP]
-> Se puede realizar comparación de cadenas también con el método `compare()`*[Ver Información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-string)
+> Se puede realizar comparación de cadenas también con el método `compare()`*[Ver Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-string)
 
 ---
 

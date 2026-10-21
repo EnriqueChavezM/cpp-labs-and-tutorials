@@ -2,7 +2,7 @@
 
 El **manejo de entradas y salidas** de datos no se realiza mediante funciones estándar como en otros lenguajes (por ejemplo, `printf` o `scanf` de C), sino mediante la noción de `streams` (flujos o corrientes de información).
 
-Un `stream` funciona como un canal por el que los datos fluyen desde o hacia nuestro programa. Para utilizarlos, es necesario incluir la librería cabecera `iostream`*[Mas información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-iostream)*.
+Un `stream` funciona como un canal por el que los datos fluyen desde o hacia nuestro programa. Para utilizarlos, es necesario incluir la librería cabecera `iostream`*[Mas información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-iostream)*.
 
 ---
 
@@ -36,7 +36,7 @@ Aquí están algunos de los métodos de `cout` más utilizados:
 
 ### Manipuladores de Formato
 
-Puedes alterar la forma en que se muestran los datos en la salida usando manipuladores (**requieren la librería `iomanip`** *[Mas información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#modulo-iomanip)*):
+Puedes alterar la forma en que se muestran los datos en la salida usando manipuladores (**requieren la librería `iomanip`** *[Mas información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-iomanip)*):
 
 - `dec, oct, hex`: Cambian la base numérica de los enteros a decimal, octal o hexadecimal.
 - `setw(n)`: Define el ancho mínimo del campo en $n$ caracteres.
@@ -81,7 +81,7 @@ std::cin.ignore();  // Limpiar el salto de línea del búfer de entrada
 std::getline(cin, str);
 ```
 
-Usa `cin.ignore()` para eliminar el salto de línea del búfer de entrada al cambiar de `cin` a `getline()`. *[Mas información](/02_Módulos_Librerías/02_Librerias_Estandar/01_Librerias.md#qué-incluye-iostream)*)
+Usa `cin.ignore()` para eliminar el salto de línea del búfer de entrada al cambiar de `cin` a `getline()`. *[Mas información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#qué-incluye-iostream)*)
 
 ---
 
