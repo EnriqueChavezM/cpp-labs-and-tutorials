@@ -1,4 +1,4 @@
-# 2. Librerías Estándar
+# 1. Librerías Estándar
 <!--markdownlint-disable MD033 -->
 La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones y clases útiles.
 
@@ -6,7 +6,7 @@ La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones 
 
 ## Tabla de contenido
 
-- [2. Librerías Estándar](#2-librerías-estándar)
+- [1. Librerías Estándar](#1-librerías-estándar)
   - [Tabla de contenido](#tabla-de-contenido)
   - [Modulo `iostream`](#modulo-iostream)
     - [¿Qué incluye `iostream`?](#qué-incluye-iostream)
@@ -16,6 +16,8 @@ La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones 
     - [Funciones más comunes de ``cmath``](#funciones-más-comunes-de-cmath)
   - [Modulo `iomanip`](#modulo-iomanip)
     - [Manipuladores Principales de `iomanip`](#manipuladores-principales-de-iomanip)
+  - [Modulo `vector`](#modulo-vector)
+    - [Métodos Principales de `vector`](#métodos-principales-de-vector)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -57,7 +59,7 @@ Incluir ``#include <string>`` en el código da acceso a:
 
   | Objeto | Descripción | Ejemplo | Opciones |
   | :---: | :--- | :---: | :--- |
-  | <ul><li>`length()`</li><li>`size()`</li></ul> | Devuelve el número de caracteres del texto. | `texto.length()` | |
+  | <ul><li>`length()`</li><li>`size()`</li></ul> | Devuelve el número de caracteres del texto. | <ul><li>`texto.length()`</li><li>`std::size(Array)`</li></ul> | *[Ver Uso size()](/01_Fundamentos/06_Estructuras_de_Datos/01_Estructuras_de_Datos.md#iterar-arrays) |
   | `empty()` | Devuelve true si la cadena está vacía (""). | `if (texto.empty())` | |
   | `compare()` | Compara dos cadenas o sub-cadenas alfabéticamente. | `texto1.compare(texto2)` | |
   | `substr(pos, len)` | Extrae una parte del texto. | `texto.substr(0, 4)` | |
@@ -103,12 +105,30 @@ Mientras que `iostream` maneja el flujo básico de los datos, `iomanip` permite 
 
 ---
 
+## Modulo `vector`
+
+A diferencia de los arrays tradicionales (estáticos) cuyo tamaño es fijo y se define al momento de compilar, un `std::vector` es un arreglo dinámico que puede crecer, encogerse y gestionar su memoria de forma automática durante la ejecución del programa.
+
+### Métodos Principales de `vector`
+
+| Método | Sintaxis | Descripción |
+| :---: | :---: | :--- |
+| `push_back()` | `nombre_vector.push_back(valor);` | Añade un elemento al final del vector, ampliando su memoria y tamaño automáticamente. |
+| `pop_back()` | `nombre_vector.pop_back();` | Elimina el último elemento del vector, reduciendo su tamaño en una unidad. |
+| `size()` | `nombre_vector.size();` | Devuelve el número actual de elementos que contiene el vector (tipo size_t). |
+| `empty()` | `nombre_vector.empty();` | Devuelve true si el vector está completamente vacío, o false si contiene al menos un elemento. |
+| `clear()` | `nombre_vector.clear();` | Elimina todos los elementos del vector, dejándolo con un tamaño de 0. |
+| `at()` | `nombre_vector.at(indice);` | Accede de forma segura al elemento ubicado en el índice especificado (comprueba límites). |
+
+---
+
 ## Ejemplo Practico
 
-1. [Modulo iostream](/02_Módulos_Librerías/02_Librerias_Estandar/02_Modulo_iostream.cpp)
-2. [Modulo string](/02_Módulos_Librerías/02_Librerias_Estandar/03_Modulo_string.cpp)
-3. [Modulo cmath](/02_Módulos_Librerías/02_Librerias_Estandar/04_Modulo_cmath.cpp)
-4. [Modulo iomanip](/02_Módulos_Librerías/02_Librerias_Estandar/05_Modulo_iomanip.cpp)
+1. [Modulo iostream](/02_Módulos_Librerías/01_Librerias_Estandar/02_Modulo_iostream.cpp)
+2. [Modulo string](/02_Módulos_Librerías/01_Librerias_Estandar/03_Modulo_string.cpp)
+3. [Modulo cmath](/02_Módulos_Librerías/01_Librerias_Estandar/04_Modulo_cmath.cpp)
+4. [Modulo iomanip](/02_Módulos_Librerías/01_Librerias_Estandar/05_Modulo_iomanip.cpp)
+5. [Modulo vector](/02_Módulos_Librerías/01_Librerias_Estandar/06_Modulo_vector.cpp)
 
 ---
 
