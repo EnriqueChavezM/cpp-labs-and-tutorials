@@ -9,7 +9,8 @@
   - [Arrays](#arrays)
     - [Tipos de Arrays](#tipos-de-arrays)
     - [Acceso a elementos](#acceso-a-elementos)
-    - [Iterar Arrays](#iterar-arrays)
+      - [Iterar Arrays](#iterar-arrays)
+    - [Modificación de elementos](#modificación-de-elementos)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -89,7 +90,7 @@ Cada valor en un array se llama elemento, y cada elemento tiene un índice. Los 
  std::cout << letters[6] << std::endl; // Imprime  g 
  ```
 
-### Iterar Arrays
+#### Iterar Arrays
 
 Para iterar sobre un array se utiliza la función `std::size` que devuelve la longitud de la lista.
 
@@ -101,12 +102,27 @@ Para iterar sobre un array se utiliza la función `std::size` que devuelve la lo
     }
   ```
 
+### Modificación de elementos
+
+Para modificar un elemento específico de un arreglo, puedes asignarle un nuevo valor usando su índice.
+
+- **Ejemplo:**
+
+ ```cpp
+ std::string my_array[] = {"apple", "banana", "cherry"};
+ my_array[1] = "orange";
+ std::cout << my_array[0] << ", " << my_array[1] << ", " << my_array[2] << std::endl;
+ //Salida: apple, orange, cherry
+ //banana se cambió por una orange
+ ```
+
 ---
 
 ## Ejemplo Practico
 
 1. [Arrays](/01_Fundamentos/06_Estructuras_de_Datos/02_Arrays.cpp)
-2. 
+   1. [Acceso a elementos de array](/01_Fundamentos/06_Estructuras_de_Datos/03_Acceso_Elementos_Array.cpp)
+   2. [Modificación de elementos](/01_Fundamentos/06_Estructuras_de_Datos/04_Modificar_elementos.cpp)
 
 ---
 
