@@ -26,7 +26,9 @@ tipo_de_dato Nombre_array[tamaño]; // Sintaxis Array Estático
 ```
 
 > [!NOTE]
-> Los índices de los arrays siempre empiezan a contar desde el 0. Si un array tiene un tamaño de 5 elementos, sus posiciones válidas van desde 0 hasta 4
+> Los índices de los arrays siempre empiezan a contar desde el 0. Si un array tiene un tamaño de 5 elementos, sus posiciones válidas van desde 0 hasta 4 (n-1).
+> Los arrays no se pueden pasar directamente a las funciones como arrays completos. Cuando intentas pasar un array a una función, este **"decae"** en un puntero a su primer elemento.
+> Además, no es posible devolver un array en una función
 
 ### Tipos de Arrays
 
