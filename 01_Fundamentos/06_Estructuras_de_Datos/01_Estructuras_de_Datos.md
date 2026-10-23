@@ -104,6 +104,9 @@ Para iterar sobre un array se utiliza la función `std::size` que devuelve la lo
     }
   ```
 
+> [!TIP]
+> Un bucle `for-each`, proporciona una forma más sencilla de iterar por un array, cuando necesitas acceder a cada elemento de un array sin modificar el propio array. **[Mas Información](/01_Fundamentos/05_Estructuras_de_Control/01_Estructuras_de_Control.md#bucle-for-mejorado)**
+
 ### Modificación de elementos
 
 Para modificar un elemento específico de un arreglo, puedes asignarle un nuevo valor usando su índice.
