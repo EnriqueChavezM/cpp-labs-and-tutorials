@@ -16,6 +16,7 @@ Nos permite controlar el flujo de ejecución de un programa.
     - [Operador Condicional](#operador-condicional)
   - [Estructura Bucle / loop](#estructura-bucle--loop)
     - [Estructura `for`](#estructura-for)
+      - [Bucle `for` mejorado](#bucle-for-mejorado)
     - [Estructura `while`](#estructura-while)
     - [Estructura `do while`](#estructura-do-while)
     - [Control de Bucle](#control-de-bucle)
@@ -241,6 +242,24 @@ graph TD
     C -- NO --> G([Fin])
 ```
 
+#### Bucle `for` mejorado
+
+El bucle for mejorado, también conocido como bucle `for-each`, proporciona una **forma más sencilla de iterar por matrices**. Gestiona automáticamente la indexación y la recuperación de elementos, lo que hace que el código sea más legible y menos propenso a errores.
+
+***Sintaxis:***
+
+```cpp
+for (tipo_dato elemento : array) {
+    // Código a ejecutar para cada elemento
+}
+```
+
+- `tipo_dato`: El tipo de elementos en el arreglo.
+- `elemento`: Una variable que contendrá el elemento actual en cada iteración.
+- `array`: El arreglo sobre el cual deseas iterar.
+
+El **bucle for mejorado** es especialmente útil cuando necesitas acceder a cada elemento de un array sin modificar el propio array.
+
 ### Estructura `while`
 
 Permite repetir un conjunto de interacciones. Sin embargo, **el número de veces** que se debe repetir **depende de la condición de finalización**. Cada vez que **inicia el ciclo se evalúa una condición**, si ésta es *verdadera* se continúa con la ejecución, de otra forma se detiene.
@@ -377,6 +396,7 @@ Un bucle infinito es un bucle que nunca se detiene porque su condición siempre 
    4. [Operador Condicional](/01_Fundamentos/05_Estructuras_de_Control/05_Operador_Condicional.cpp)
 2. *Estructuras Bucle / loop*
    1. [Estructura `for`](/01_Fundamentos/05_Estructuras_de_Control/06_Estructura_for.cpp)
+      1. [Bucle `for` mejorado](/01_Fundamentos/05_Estructuras_de_Control/11_Bucle_for_mejorado.cpp)
    2. [Estructura `while`](/01_Fundamentos/05_Estructuras_de_Control/07_Estructura_while.cpp)
    3. [Estructura `do while`](/01_Fundamentos/05_Estructuras_de_Control/08_Estructura_do_while.cpp)
    4. *Control de Bucle*
