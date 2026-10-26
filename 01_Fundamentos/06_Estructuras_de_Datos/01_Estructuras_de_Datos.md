@@ -215,7 +215,7 @@ Las cadenas de estilo C se crean con el tipo `char` en lugar de `string`. Termin
  `str3` se declara con un tamaño de 10, pero solo se inicializan los primeros 6 caracteres. El resto del arreglo se rellena con caracteres nulos.
 
 > [!NOTE]
-> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring`
+> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring` **[Mas Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-cstring)**
 > Después, podemos usar la función `strlen` para obtener la longitud de una cadena al estilo de C
 
 ---
