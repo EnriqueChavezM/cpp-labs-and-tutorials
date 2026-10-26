@@ -12,6 +12,7 @@
       - [Iterar Arrays](#iterar-arrays)
     - [Modificación de elementos](#modificación-de-elementos)
     - [Operaciones comunes con Arrays](#operaciones-comunes-con-arrays)
+    - [Cadenas al estilo C](#cadenas-al-estilo-c)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -182,6 +183,40 @@ Algunas operaciones comunes con arreglos son:
   }
   std::cout << "Min: " << min;
   ```
+
+### Cadenas al estilo C
+
+Las cadenas de estilo C se crean con el tipo `char` en lugar de `string`. Terminan con un carácter especial llamado carácter nulo (`'\0'`) que **marca el final de la cadena**. Las cadenas al estilo de C a menudo se denominan *"cadenas terminadas en nulo"*.
+
+**Ejemplo:**
+
+- *Declaración simple:*
+
+ ```cpp
+ char str1[] = "Hello";
+ ```
+
+ `str1` se declara sin un tamaño específico. El compilador determina automáticamente el tamaño basándose en el inicializador (**incluyendo el carácter nulo**).
+
+- *Inicialización explícita con caracteres:*
+
+ ```cpp
+ char str2[6] = {'W', 'o', 'r', 'l', 'd', '\0'};
+ ```
+
+ `str2` se declara con un tamaño de 6 y se inicializa explícitamente con caracteres, incluyendo el carácter nulo al final.
+
+- *Inicialización parcial:*
+
+ ```cpp
+ char str3[10] = "Hello";
+ ```
+
+ `str3` se declara con un tamaño de 10, pero solo se inicializan los primeros 6 caracteres. El resto del arreglo se rellena con caracteres nulos.
+
+> [!NOTE]
+> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring`
+> Después, podemos usar la función `strlen` para obtener la longitud de una cadena al estilo de C
 
 ---
 
