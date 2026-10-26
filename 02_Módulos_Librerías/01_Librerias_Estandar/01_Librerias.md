@@ -18,6 +18,8 @@ La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones 
     - [Manipuladores Principales de `iomanip`](#manipuladores-principales-de-iomanip)
   - [Modulo `vector`](#modulo-vector)
     - [Métodos Principales de `vector`](#métodos-principales-de-vector)
+  - [Modulo `cstring`](#modulo-cstring)
+    - [Funciones Principales de `cstring`](#funciones-principales-de-cstring)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -25,6 +27,12 @@ La biblioteca estándar de C++ ofrece una amplia gama de módulos con funciones 
 ## Modulo `iostream`
 
 Es la cabecera estándar de **Entrada/Salida (I/O)** de C++. Su nombre proviene de *I/O Stream (Input/Output Stream, flujo de entrada y salida)*. Proporciona los objetos necesarios para un programa pueda comunicarse con el exterior, permitiendo mostrar información en la pantalla y recibir datos ingresados desde el teclado.
+
+**Cabecera:**
+
+```cpp
+#include <iostream>
+```
 
 ### ¿Qué incluye `iostream`?
 
@@ -45,6 +53,12 @@ Al incluir esta cabecera mediante `#include <iostream>`, se declaran automática
 ## Modulo `string`
 
 Es la librería estándar que proporciona la clase ``std::string``, la cual se utiliza para crear, manipular y gestionar cadenas de texto de forma dinámica y segura.
+
+**Cabecera:**
+
+```cpp
+#include <string>
+```
 
 ### ¿Que contiene `string`?
 
@@ -73,6 +87,12 @@ Incluir ``#include <string>`` en el código da acceso a:
 
 La cabecera proporciona funciones matemáticas avanzadas (como potencias, raíces cuadradas, trigonometría y redondeos). **Sustituye** a la antigua librería ``math.h`` de C para integrarse correctamente con el sistema de tipos y espacios de nombres ``(std)`` de C++.
 
+**Cabecera:**
+
+```cpp
+#include <cmath>
+```
+
 ### Funciones más comunes de ``cmath``
 
 | Sintaxis | Descripción |
@@ -93,6 +113,12 @@ La cabecera proporciona funciones matemáticas avanzadas (como potencias, raíce
 `iomanip` (abreviatura de *Input/Output Manipulators*, o *manipuladores de entrada y salida*) es una librería estándar de C++ que proporciona herramientas para formatear cómo se muestra la información en pantalla (o en archivos).
 Mientras que `iostream` maneja el flujo básico de los datos, `iomanip` permite personalizar aspectos como la cantidad de decimales, el ancho de los campos de texto, el alineamiento y los caracteres de relleno.
 
+**Cabecera:**
+
+```cpp
+#include <iomanip>
+```
+
 ### Manipuladores Principales de `iomanip`
 
 | Manipulador | Descripción | Ejemplo de uso |
@@ -109,6 +135,12 @@ Mientras que `iostream` maneja el flujo básico de los datos, `iomanip` permite 
 
 A diferencia de los arrays tradicionales (estáticos) cuyo tamaño es fijo y se define al momento de compilar, un `std::vector` es un arreglo dinámico que puede crecer, encogerse y gestionar su memoria de forma automática durante la ejecución del programa.
 
+**Cabecera:**
+
+```cpp
+#include <vector>
+```
+
 ### Métodos Principales de `vector`
 
 | Método | Sintaxis | Descripción |
@@ -122,6 +154,30 @@ A diferencia de los arrays tradicionales (estáticos) cuyo tamaño es fijo y se 
 
 ---
 
+## Modulo `cstring`
+
+Es una librería estándar heredada directamente de C que proporciona un conjunto de funciones para la manipulación de cadenas de caracteres al estilo C (es decir, arreglos de tipo char que terminan en el carácter nulo '\0').
+
+**Cabecera:**
+
+```cpp
+#include <cstring>
+```
+
+### Funciones Principales de `cstring`
+
+A diferencia de ``std::string`` (que utiliza métodos internos orientados a objetos), las funciones de `cstring` son funciones globales que reciben arreglos de caracteres (`char*`) como argumentos
+
+| Función | ¿Qué hace? |
+| :---: | :---: | :--- |
+| `strlen(s)` | Devuelve la longitud de la cadena s (sin contar el carácter nulo '\0'). |
+| `strcpy(dest, orig)` | Copia el contenido de la cadena orig dentro de dest. |
+| `strcat(dest, orig)` | Concatena (une) la cadena orig al final de dest. |
+| `strcmp(s1, s2)` | Compara alfabéticamente dos cadenas. Devuelve 0 si son iguales, un valor menor a 0 si s1 es menor, o mayor a 0 si es mayor. |
+| `strncpy(dest, orig, n)` | Copia como máximo n caracteres de orig a dest de forma segura. |
+
+---
+
 ## Ejemplo Practico
 
 1. [Modulo iostream](/02_Módulos_Librerías/01_Librerias_Estandar/02_Modulo_iostream.cpp)
@@ -132,7 +188,7 @@ A diferencia de los arrays tradicionales (estáticos) cuyo tamaño es fijo y se 
 
 ---
 
-[Inicio](#2-librerías-estándar)
+[Inicio](#1-librerías-estándar)
 
 ---
 
