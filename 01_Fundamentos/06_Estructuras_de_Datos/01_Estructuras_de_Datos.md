@@ -11,6 +11,7 @@
     - [Acceso a elementos](#acceso-a-elementos)
       - [Iterar Arrays](#iterar-arrays)
     - [Modificación de elementos](#modificación-de-elementos)
+    - [Operaciones comunes con Arrays](#operaciones-comunes-con-arrays)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
@@ -120,6 +121,67 @@ Para modificar un elemento específico de un arreglo, puedes asignarle un nuevo 
  //Salida: apple, orange, cherry
  //banana se cambió por una orange
  ```
+
+### Operaciones comunes con Arrays
+
+Algunas operaciones comunes con arreglos son:
+
+- **Encuentra la suma de todos los elementos de un arreglo:**
+  
+  **Ejemplo:**
+
+  ```cpp
+  int numbers[] = {1, 2, 3, 4, 5};
+  int sum = 0;
+  for (int number : numbers) {
+     sum += number;
+  }
+  std::cout << "Sum: " << sum;
+  ```
+
+- **Encuentra el promedio de los elementos de un array:**
+  
+  **Ejemplo:**
+
+  ```cpp
+  int numbers[] = {1, 2, 3, 4, 5};
+  double sum = 0;
+  for (int number : numbers) {
+      sum += number;
+  }
+  double average = sum / std::size(numbers);
+  std::cout << "Average: " << average;
+  ```
+
+- **Encuentra el elemento máximo de un array:**  
+  
+  **Ejemplo:**
+
+  ```cpp
+  int numbers[] = {1, 5, 2, 9, 3};
+  int max = numbers[0];
+  for (int i = 1; i < std::size(numbers); i++) {
+      if (numbers[i] > max) {
+         max = numbers[i];
+      }
+  }
+  std::cout << "Max: " << max;
+  ```
+
+- **Encuentra el elemento mínimo de un arreglo:**
+
+  **Ejemplo:**
+
+  ```cpp
+  int numbers[] = {1, 5, 2, 9, 3};
+  int min = numbers[0];
+  for (int i = 1; i < std::size(numbers); i++) {
+      if (numbers[i] < min) {
+          min = numbers[i];
+      }
+  }
+  std::cout << "Min: " << min;
+  ```
 
 ---
 
