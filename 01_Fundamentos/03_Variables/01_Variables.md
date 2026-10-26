@@ -151,7 +151,7 @@ Los *números reales* suelen representarse mediante dos tipos de datos principal
 
 ### Char
 
-Un **char** es un solo carácter (Por ejemplo: 1, 6, %, b, p, ., T, etc.)
+Un **char** es un solo carácter (Por ejemplo: '1', '6', '%', 'b', 'p', '.', 'T', etc.)
 
 El tipo **char** es un tipo especial que consiste en un solo carácter.
 
@@ -322,13 +322,15 @@ Hay dos tipos de conversión de tipos:
 ---
 
 ## Ejemplo Practico
-
-1. [Números Enteros](/01_Fundamentos/03_Variables/02_Numeros_Enteros.cpp)
-2. [Números Reales](/01_Fundamentos/03_Variables/03_Numeros_Reales.cpp)
-3. [Variables String](/01_Fundamentos/03_Variables/04_Char_String.cpp)
-4. [Variables Boolean](/01_Fundamentos/03_Variables/05_Boolean.cpp)
-5. [Variables Constantes](/01_Fundamentos/03_Variables/06_Const.cpp)
-6. [Casting de variables](/01_Fundamentos/03_Variables/07_Casting.cpp)
+  
+1. *Variables Simples*
+   1. [Números Enteros](/01_Fundamentos/03_Variables/02_Numeros_Enteros.cpp)
+   2. [Números Reales](/01_Fundamentos/03_Variables/03_Numeros_Reales.cpp)
+   3. [Variables String](/01_Fundamentos/03_Variables/04_Char_String.cpp)
+   4. [Variables Boolean](/01_Fundamentos/03_Variables/05_Boolean.cpp)
+2. *Modificador de Tipo*
+   1. [Variables Constantes](/01_Fundamentos/03_Variables/06_Const.cpp)
+3. [Casting de variables](/01_Fundamentos/03_Variables/07_Casting.cpp)
 
 ---
 
