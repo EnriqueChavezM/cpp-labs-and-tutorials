@@ -190,6 +190,7 @@ Algunas operaciones comunes con arreglos son:
 1. [Arrays](/01_Fundamentos/06_Estructuras_de_Datos/02_Arrays.cpp)
    1. [Acceso a elementos de array](/01_Fundamentos/06_Estructuras_de_Datos/03_Acceso_Elementos_Array.cpp)
    2. [Modificación de elementos](/01_Fundamentos/06_Estructuras_de_Datos/04_Modificar_elementos.cpp)
+   3. [Operaciones comunes con Arrays](/01_Fundamentos/06_Estructuras_de_Datos/05_Operaciones_Comunes_Arrays.cpp)
 
 ---
 
