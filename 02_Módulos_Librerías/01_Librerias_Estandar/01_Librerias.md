@@ -169,7 +169,7 @@ Es una librería estándar heredada directamente de C que proporciona un conjunt
 A diferencia de ``std::string`` (que utiliza métodos internos orientados a objetos), las funciones de `cstring` son funciones globales que reciben arreglos de caracteres (`char*`) como argumentos
 
 | Función | ¿Qué hace? |
-| :---: | :---: | :--- |
+| :---: | :---: |
 | `strlen(s)` | Devuelve la longitud de la cadena s (sin contar el carácter nulo '\0'). |
 | `strcpy(dest, orig)` | Copia el contenido de la cadena orig dentro de dest. |
 | `strcat(dest, orig)` | Concatena (une) la cadena orig al final de dest. |
