@@ -74,12 +74,15 @@ Incluir ``#include <string>`` en el código da acceso a:
   | Objeto | Descripción | Ejemplo | Opciones |
   | :---: | :--- | :---: | :--- |
   | <ul><li>`length()`</li><li>`size()`</li></ul> | Devuelve el número de caracteres del texto. | <ul><li>`texto.length()`</li><li>`std::size(Array)`</li></ul> | *[Ver Uso size()](/01_Fundamentos/06_Estructuras_de_Datos/01_Estructuras_de_Datos.md#iterar-arrays) |
+  | `getline()` | Función para leer líneas completas con espacios. | `getline(cin, str)` | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#lectura-de-cadenas-de-texto-con-espacios)* |
+  | `clear()` | Borra todo el contenido de la variable. | `texto.clear()` | |
+  | `insert(pos, str)` | Inserta la cadena `str` en la posición `pos`. | `texto.insert(5, "C++");` | |
+  | `replace(pos, len, str)` | Reemplaza len caracteres comenzando en la posición `pos` con la cadena `str` | `texto.replace(7, 5, "Texto Nuevo");` | |
+  | `substr(pos, len)` | Devuelve la subcadena que comienza en la posición `pos` con una longitud de `len` | `texto.substr(0, 4)` | |
+  | `append(str)` | Añade la cadena `str` al final | `str.append("Texto Nuevo");` | |
   | `empty()` | Devuelve true si la cadena está vacía (""). | `if (texto.empty())` | |
   | `compare()` | Compara dos cadenas o sub-cadenas alfabéticamente. | `texto1.compare(texto2)` | |
-  | `substr(pos, len)` | Extrae una parte del texto. | `texto.substr(0, 4)` | |
   | `find("texto")` | Busca la posición donde aparece una palabra o carácter. | `texto.find("hola")` | |
-  | `clear()` | Borra todo el contenido de la variable. | `texto.clear()` | |
-  | `getline()` | Función para leer líneas completas con espacios. | `getline(cin, str)` | *[Mas información](/01_Fundamentos/02_Entradas_Salidas/01_Entradas_Salidas.md#lectura-de-cadenas-de-texto-con-espacios)* |
 
 ---
 
