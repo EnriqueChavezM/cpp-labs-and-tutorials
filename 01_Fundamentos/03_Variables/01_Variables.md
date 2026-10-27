@@ -196,7 +196,7 @@ Las cadenas de estilo C se crean con el tipo `char` en lugar de `string`. Termin
  `str3` se declara con un tamaño de 10, pero solo se inicializan los primeros 6 caracteres. El resto del arreglo se rellena con caracteres nulos.
 
 > [!NOTE]
-> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring` **[Mas Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-cstring)**
+> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring` *[Mas Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-cstring)*
 > Después, podemos usar la función `strlen` para obtener la longitud de una cadena al estilo de C.
 > Una cadena de estilo C con un tamaño específico, necesitas asignar suficiente espacio para los caracteres que quieres almacenar, más un espacio extra para el carácter nulo.
 > Puedes acceder a caracteres individuales en una cadena de estilo C utilizando la notación de arreglos.
@@ -204,7 +204,7 @@ Las cadenas de estilo C se crean con el tipo `char` en lugar de `string`. Termin
 
 ### String
 
-El tipo **string** es una secuencia de caracteres que puede contener varios caracteres. Para usar cadenas y sus funciones, debes incluir la directiva en la parte superior del código:
+El tipo **string** es una secuencia de caracteres que puede contener varios caracteres. Para usar cadenas y sus funciones *[Mas Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-string)*, debes incluir la directiva en la parte superior del código:
 
 ```cpp
 #include <string>
