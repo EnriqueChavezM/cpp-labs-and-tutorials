@@ -16,7 +16,7 @@ std::string concatenateStrings(std::string str1, std::string str2) {
     /* Variables */
     std::string name;
 
-    /* Concatenar */
+    /* Concatenar Texto */
     name = str1 + " " + str2;
 
     /* Resultado */
