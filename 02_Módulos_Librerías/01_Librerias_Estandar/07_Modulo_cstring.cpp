@@ -1,5 +1,6 @@
 /**************************************************************************************************
- * El siguiente programa utiliza algunas de las funciones más comunes de <cstring> para medir, copiar y comparar cadenas de caracteres tradicionales:
+ * Ejemplo 1:
+ *  └─ El siguiente programa utiliza algunas de las funciones más comunes de <cstring> para medir, copiar y comparar cadenas de caracteres tradicionales:
  * 
 **************************************************************************************************/
 #include <iostream>
