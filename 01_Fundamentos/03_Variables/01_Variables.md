@@ -15,7 +15,9 @@ Las variables son contenedores que almacenan valores de datos. Se utilizan para 
     - [Números Enteros](#números-enteros)
     - [Números Reales](#números-reales)
     - [Char](#char)
+    - [Cadenas al estilo C](#cadenas-al-estilo-c)
     - [String](#string)
+      - [Operaciones con Cadenas](#operaciones-con-cadenas)
     - [Boolean](#boolean)
   - [Modificador de Tipo](#modificador-de-tipo)
     - [Constantes](#constantes)
@@ -163,11 +165,46 @@ char c1 = 'h';
 
 En el ejemplo anterior, se inicializa una variable **char** llamada ``c1``.
 
+### Cadenas al estilo C
+
+Las cadenas de estilo C se crean con el tipo `char` en lugar de `string`. Terminan con un carácter especial llamado carácter nulo (`'\0'`) que **marca el final de la cadena**. Las cadenas al estilo de C a menudo se denominan *"cadenas terminadas en nulo"*.
+
+**Ejemplo:**
+
+- *Declaración simple:*
+
+ ```cpp
+ char str1[] = "Hello";
+ ```
+
+ `str1` se declara sin un tamaño específico. El compilador determina automáticamente el tamaño basándose en el inicializador (**incluyendo el carácter nulo**).
+
+- *Inicialización explícita con caracteres:*
+
+ ```cpp
+ char str2[6] = {'W', 'o', 'r', 'l', 'd', '\0'};
+ ```
+
+ `str2` se declara con un tamaño de 6 y se inicializa explícitamente con caracteres, incluyendo el carácter nulo al final.
+
+- *Inicialización parcial:*
+
+ ```cpp
+ char str3[10] = "Hello";
+ ```
+
+ `str3` se declara con un tamaño de 10, pero solo se inicializan los primeros 6 caracteres. El resto del arreglo se rellena con caracteres nulos.
+
+> [!NOTE]
+> Para usar cadenas de estilo C, necesitamos incluir la librería `cstring` **[Mas Información](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md#modulo-cstring)**
+> Después, podemos usar la función `strlen` para obtener la longitud de una cadena al estilo de C.
+> Una cadena de estilo C con un tamaño específico, necesitas asignar suficiente espacio para los caracteres que quieres almacenar, más un espacio extra para el carácter nulo.
+> Puedes acceder a caracteres individuales en una cadena de estilo C utilizando la notación de arreglos.
+> También puedes modificar caracteres en una cadena de estilo C, siempre y cuando no excedas los límites del arreglo.
+
 ### String
 
-El tipo **string** es una secuencia de caracteres que puede contener varios caracteres.
-
-Para usar cadenas, debes incluir la directiva en la parte superior del código:
+El tipo **string** es una secuencia de caracteres que puede contener varios caracteres. Para usar cadenas y sus funciones, debes incluir la directiva en la parte superior del código:
 
 ```cpp
 #include <string>
@@ -194,6 +231,21 @@ También es necesitas gestionar el espacio de nombres de una de estas dos manera
 > [!NOTE]
 > Las variables de cadena utiliza comillas dobles.
 > Ambos métodos requieren ``#include <string>``. La única diferencia es si quieres escribir 'std::' antes de 'string' o no.
+
+#### Operaciones con Cadenas
+
+Puedes concatenar cadenas usando el operador `+` o el operador `+=`.
+
+**Ejemplo:**
+
+```cpp
+std::string str1 = "Hello";
+std::string str2 = "World";
+std::string result = str1 + " " + str2; // Concatena str1, un espacio y str2
+std::cout << result;  // Salida: Hello World
+```
+
+Otra operación común de cadenas es encontrar la longitud de una cadena. Puedes usar el método `length()` o `size()` para obtener el número de caracteres en una cadena.
 
 ### Boolean
 
@@ -326,8 +378,10 @@ Hay dos tipos de conversión de tipos:
 1. *Variables Simples*
    1. [Números Enteros](/01_Fundamentos/03_Variables/02_Numeros_Enteros.cpp)
    2. [Números Reales](/01_Fundamentos/03_Variables/03_Numeros_Reales.cpp)
-   3. [Variables String](/01_Fundamentos/03_Variables/04_Char_String.cpp)
-   4. [Variables Boolean](/01_Fundamentos/03_Variables/05_Boolean.cpp)
+   3. [Cadenas al estilo C](/01_Fundamentos/03_Variables/08_Cadenas_Tipo_C.cpp)
+   4. [Variables String](/01_Fundamentos/03_Variables/04_Char_String.cpp)
+      1. [Operaciones con cadenas](/01_Fundamentos/03_Variables/09_Opuedes_con_Cadenas.cpp)
+   5. [Variables Boolean](/01_Fundamentos/03_Variables/05_Boolean.cpp)
 2. *Modificador de Tipo*
    1. [Variables Constantes](/01_Fundamentos/03_Variables/06_Const.cpp)
 3. [Casting de variables](/01_Fundamentos/03_Variables/07_Casting.cpp)
