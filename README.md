@@ -69,6 +69,12 @@ C++ es un lenguaje de programación potente y de alto rendimiento, utilizado en 
 
 ---
 
+## 🏆 Certificaciones y Cursos
+
+- 🧩 **Coddy - C++ Fundamentals** — *Coddy* | [Ver Certificado](./docs/03_Constancias/CPP%20Fundamentals%20-%20Coddy.pdf)
+
+---
+
 ## 👤 Autor
 
 Desarrollado con dedicación por **Enrique Chávez Márquez**.
