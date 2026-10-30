@@ -8,17 +8,17 @@ Antes de sumergirnos en conceptos más avanzados, es importante familiarizarse c
 
 - [1. Sintaxis Básica y Estructura de un Programa en C++](#1-sintaxis-básica-y-estructura-de-un-programa-en-c)
   - [Tabla de Contenido](#tabla-de-contenido)
-  - [1. Sintaxis Básica](#1-sintaxis-básica)
+  - [Sintaxis Básica](#sintaxis-básica)
     - [Delimitar Bloques de Código](#delimitar-bloques-de-código)
     - [Finalizar Sentencias](#finalizar-sentencias)
     - [Sensibilidad a mayúsculas y minúsculas](#sensibilidad-a-mayúsculas-y-minúsculas)
-  - [2. Comentarios](#2-comentarios)
-  - [3. Estructura de un Programa en C++](#3-estructura-de-un-programa-en-c)
+  - [Comentarios](#comentarios)
+  - [Estructura de un Programa en C++](#estructura-de-un-programa-en-c)
   - [Ejemplo Practico](#ejemplo-practico)
 
 ---
 
-## 1. Sintaxis Básica
+## Sintaxis Básica
 
 ### Delimitar Bloques de Código
 
@@ -53,7 +53,7 @@ C++ es un lenguaje *case-sensitive*, lo que significa que **distingue entre may�
 
 ---
 
-## 2. Comentarios
+## Comentarios
 
 Los comentarios son notas que escribes dentro del código. El compilador los ignora por completo; existen únicamente para ayudar a las personas a entender el código en el futuro.
 
@@ -74,7 +74,7 @@ varias líneas */
 
 ---
 
-## 3. Estructura de un Programa en C++
+## Estructura de un Programa en C++
 
 Todo programa en **C++** necesita obligatoriamente estos elementos:
 
