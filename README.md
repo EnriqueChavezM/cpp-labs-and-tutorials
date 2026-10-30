@@ -56,7 +56,7 @@ C++ es un lenguaje de programación potente y de alto rendimiento, utilizado en 
 ## 📚 Cursos, Tutoriales y Referencias
 
 - 🧩 **[Coddy - C++ Fundamentals](https://coddy.tech/journeys/cpp/fundamentals)** — *Plataforma interactiva de resolución de retos y fundamentos.*
-- 🌐 **[Tutorial de C++ Sintaxis Básica - Luis Llamas](https://www.luisllamas.es/curso-cpp/)** — *Guía teórica y práctica en español sobre los fundamentos de C++.*
+- 🌐 **[Curso C++ - Luis Llamas](https://www.luisllamas.es/curso-cpp/)** — *Guía teórica y práctica en español sobre los fundamentos de C++.*
 - 📽️ **[Curso de programación en C++](https://www.youtube.com/playlist?list=PLLwIDTEDfqbYh8S4JNHYkXaGx5zyAtq5z)** - *Canal arm :: teach*
 - 📽️ **[Programación en C++](https://www.youtube.com/playlist?list=PLWtYZ2ejMVJlUu1rEHLC0i_oibctkl0Vh)** - *Programación ATS*
 - 📖 **[C++ Reference (Documentación Oficial)](https://en.cppreference.com/?utm_source=gemini)**
