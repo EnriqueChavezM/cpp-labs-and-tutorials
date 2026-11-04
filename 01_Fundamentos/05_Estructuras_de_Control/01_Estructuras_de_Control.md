@@ -39,7 +39,7 @@ Su función es realizar o no una determinada acción o sentencia, basándose en 
 
 ```cpp
 if (Condición){
-    # Bloque de código a ejecutar si la condición es verdad
+    // Bloque de código a ejecutar si la condición es verdad
 }
 ```
 
@@ -95,7 +95,7 @@ Permite establecer una serie de condiciones al interior del programa, que ayuda 
 if (Condición){
     // Bloque de código a ejecutar si la condición es verdad
 }
-elif (Condición){
+else if (Condición){
     // Bloque de código a ejecutar si if es falso y la condición es verdad
 }
 else{
@@ -271,7 +271,7 @@ Permite repetir un conjunto de interacciones. Sin embargo, **el número de veces
 
 ```cpp
 while (condición de finalización) { 
-    Código a ejecutar
+    //Código a ejecutar
 }
 ```
 
