@@ -40,6 +40,9 @@ C++ es un lenguaje de programación potente y de alto rendimiento, utilizado en 
 │    
 ├── 02_Módulos_Librerías/            # Elaboración y desarrollo de módulos y bibliotecas del sistema
 │   └── 01_Librerías/
+│
+├── 03_Gestión_de_Memoria/           # Variables, operadores * y &, paso por referencia
+│   └── 01_Punteros_y_Referencias/
 │   
 ├── 05_Retos_y_ejercicios/
 │   └── 01_Coddy/

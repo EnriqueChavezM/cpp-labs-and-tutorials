@@ -18,6 +18,14 @@
 
 1. [Librerías Estándar](/02_Módulos_Librerías/01_Librerias_Estandar/01_Librerias.md)
 
+---
+
+## 3. Gestión de Memoria
+
+1. [Punteros y Referencias](/03_Gestión_Memoria/01_Punteros_Referencias/01_Punteros_Referencias.md)
+
+---
+
 ## 5. Retos y Ejercicios
 
 1. **Coddy**
